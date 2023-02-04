@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './App.css'
+import './Home.css'
 
 import logo from "../Assets/logo.png"
 import logoBig from "../Assets/logoBig.png"
@@ -94,25 +94,31 @@ export function Home() {
                 </div>
                 <footer className="footer">
                     <div className="footer-container">
-                        <div>
-                            <img src={logoBig} alt="logo" className="footer-logo" />
+                        <div className="footer-container-content">
+                            <div>
+                                <img src={logoBig} alt="logo" className="footer-logo" />
+                            </div>
+                            <div className="footer-item-container">
+                                <div className="footer-item">
+                                    <h1>Links</h1>
+                                    <ul>
+                                        <li>About Us</li>
+                                        <li>Contact Us</li>
+                                        <li>FAQ</li>
+                                        <li>Copywrite</li>
+                                    </ul>
+                                </div>
+                                <div className="footer-item">
+                                    <h1>Legal</h1>
+                                    <ul>
+                                        <li>Terms of Service</li>
+                                        <li>Privacy Policy</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                        <div className="footer-item-container">
-                            <div className="footer-item">
-                                <h1>Links</h1>
-                                <ul>
-                                    <li>Panel</li>
-                                    <li>Status Page</li>
-                                    <li>Discord</li>
-                                </ul>
-                            </div>
-                            <div className="footer-item">
-                                <h1>Legal</h1>
-                                <ul>
-                                    <li>Terms of Service</li>
-                                    <li>Privacy Policy</li>
-                                </ul>
-                            </div>
+                        <div class="footer-acknowledgement">
+                            <p class="footer-acknowledgement-content">We acknowledge the Traditional Owners of the land where we work and live. We pay our respects to Elders past, present and emerging. We celebrate the stories, culture and traditions of Aboriginal and Torres Strait Islander Elders of all communities who also work and live on this land.</p>
                         </div>
                     </div>
                 </footer>
