@@ -2,9 +2,9 @@ import React from 'react';
 
 import './Home.css'
 
-import logo from "../Assets/logo.png"
-import logoBig from "../Assets/logoBig.png"
-import infoList from "../Assets/undraw/list.svg"
+import logo from "../Assets/logo.svg"
+import logoBig from "../Assets/logoBig.svg"
+import infoHomework from "../Assets/undraw/homework.svg"
 import infoMap from "../Assets/undraw/map.svg"
 import infoNotification from "../Assets/undraw/notification.svg"
 
@@ -31,8 +31,8 @@ export function Home() {
                         <p>Our app is the perfect navigation companion for students, providing real-time directions to all of your classes. Simply input your class schedule and CampusRoute will do the rest, showing you the fastest and most efficient path to your next class. Whether you're walking, cycling, or taking public transport, our app has got you covered with the best route options. With its intuitive interface and easy-to-follow directions, you'll arrive at each class with confidence and on time.</p>
                     </div>
                     <div className="main-info-content-item">
-                        <img src={infoList} alt="" />
-                        <p>Gone are the days of manual roll calls and keeping track of attendance on paper. You can mark your attendance for each class with just a few taps. Not only is this a time-saver for you, but it's also an accurate and reliable way for you to keep track of class attendance. Whether you have a large lecture hall or a small seminar, CampusRoute ensures that your students are accounted for.</p>
+                        <img src={infoHomework} alt="" />
+                        <p>Homework Management is a feature that allows students to keep track of their assignments, set reminders for upcoming due dates, and receive notifications when new homework is assigned by their teachers. With this feature, students can stay organized and prioritize their workload, ensuring they complete all of their homework on time and to the best of their ability.</p>
                     </div>
                     <div className="main-info-content-item">
                         <img src={infoNotification} alt="" />
@@ -49,7 +49,7 @@ export function Home() {
                     </details>
                     <details className="main-bottom-content-detail">
                         <summary>What features does CampusRoute offer?</summary>
-                        <p>CampusRoute offers features such as class scheduling, real-time navigation, attendance tracking, and class transition notifications.</p>
+                        <p>CampusRoute offers features such as class scheduling, real-time navigation, and class transition notifications.</p>
                     </details>
                     <details className="main-bottom-content-detail">
                         <summary>Is CampusRoute available for both iOS and Android devices?</summary>
@@ -61,7 +61,7 @@ export function Home() {
                     </details>
                     <details className="main-bottom-content-detail">
                         <summary>Can I input my own class schedule into CampusRoute?</summary>
-                        <p>CampusRoute offers features such as class scheduling, real-time navigation, attendance tracking, and class transition notifications.</p>
+                        <p>Yes, you can easily input your class schedule into CampusRoute and it will provide you with the quickest route to each class.</p>
                     </details>
                     <details className="main-bottom-content-detail">
                         <summary>Can I use CampusRoute for other places besides high schools/universities?</summary>
@@ -82,8 +82,8 @@ export function Home() {
                     <details className="main-bottom-content-detail">
                         <summary>What do the plans of CampusRoute offer?</summary>
                         <ul>
-                            <li className="main-bottom-content-detail-plans">The free version of CampusRoute offers basic features such as class scheduling, real-time navigation, and attendance tracking for individual students.</li>
-                            <li className="main-bottom-content-detail-plans">The paid version of CampusRoute for schools includes advanced features such as attendence marking, custom branding, and dedicated support.</li>
+                            <li className="main-bottom-content-detail-plans">The free version of CampusRoute for students offers basic features such as class scheduling, real-time navigation, and attendance tracking for individual students.</li>
+                            <li className="main-bottom-content-detail-plans">The paid version of CampusRoute for schools offers advanced features such as custom branding, and dedicated support. Including all free features.</li>
                         </ul>
                             <p className="main-bottom-content-detail-plans">The cost of the paid version of CampusRoute for schools varies depending on the specific needs and requirements of the school. Contact our sales team for a custom quote.</p>
                     </details>
@@ -117,8 +117,8 @@ export function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div class="footer-acknowledgement">
-                            <p class="footer-acknowledgement-content">We acknowledge the Traditional Owners of the land where we work and live. We pay our respects to Elders past, present and emerging. We celebrate the stories, culture and traditions of Aboriginal and Torres Strait Islander Elders of all communities who also work and live on this land.</p>
+                        <div className="footer-acknowledgement">
+                            <p className="footer-acknowledgement-content">We acknowledge the Traditional Owners of the land where we work and live. We pay our respects to Elders past, present and emerging. We celebrate the stories, culture and traditions of Aboriginal and Torres Strait Islander Elders of all communities who also work and live on this land.</p>
                         </div>
                     </div>
                 </footer>
