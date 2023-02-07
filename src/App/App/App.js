@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 
 import "./App.css";
 
+import { Header } from "./Components/Header";
+
 import logo from "../../Assets/logo.svg";
 import logoBig from "../../Assets/logoBig.svg";
 
@@ -29,22 +31,81 @@ export function App() {
     const navigate = useNavigate();
 
     if (user) {
-        console.log(auth.currentUser)
+        console.log(auth.currentUser);
         return (
-            <div>
-                hi {auth.currentUser.displayName}<br />
-                <img src={auth.currentUser.photoURL} /><br />
-                <button
-                    onClick={() => {
-                        auth.signOut();
-                        window.location.reload();
-                    }}
-                >
-                    Sign Out
-                </button>
-            </div>
+            <>
+                <section className="main-top">
+                    <Header />
+                    <div className="main-content">
+                        <div className="main-content-table">
+                            <span />
+                            <h1>Monday</h1>
+                            <h1>Tuesday</h1>
+                            <h1>Wensday</h1>
+                            <h1>Thursday</h1>
+                            <h1>Friday</h1>
+
+                            <h2 id="lesson">Period 1</h2>
+
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+
+                            <h2 id="lesson">Period 2</h2>
+
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+
+                            <h2 id="break">Break 1</h2>
+
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+
+                            <h2 id="lesson">Period 3</h2>
+
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+
+                            <h2 id="lesson">Period 4</h2>
+
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+
+                            <h2 id="break">Break 2</h2>
+
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+
+                            <h2 id="lesson">Period 5</h2>
+
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </section>
+            </>
         );
     } else {
-        return navigate("/signup");
+        return navigate("/signin");
     }
 }
