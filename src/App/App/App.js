@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 import "./App.css";
@@ -31,75 +31,16 @@ export function App() {
     const navigate = useNavigate();
 
     if (user) {
-        console.log(auth.currentUser);
         return (
             <>
                 <section className="main-top">
                     <Header />
                     <div className="main-content">
-                        <div className="main-content-table">
-                            <span />
-                            <h1>Monday</h1>
-                            <h1>Tuesday</h1>
-                            <h1>Wensday</h1>
-                            <h1>Thursday</h1>
-                            <h1>Friday</h1>
-
-                            <h2 id="lesson">Period 1</h2>
-
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-
-                            <h2 id="lesson">Period 2</h2>
-
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-
-                            <h2 id="break">Break 1</h2>
-
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-
-                            <h2 id="lesson">Period 3</h2>
-
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-
-                            <h2 id="lesson">Period 4</h2>
-
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-
-                            <h2 id="break">Break 2</h2>
-
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-
-                            <h2 id="lesson">Period 5</h2>
-
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
+                        <div className="main-content-table-container">
+                            <Timetable />
+                        </div>
+                        <div className="main-content-table-container map">
+                            <SchoolMap />
                         </div>
                     </div>
                 </section>
@@ -108,4 +49,81 @@ export function App() {
     } else {
         return navigate("/signin");
     }
+}
+
+function Timetable() {
+    return (
+        <div className="main-content-table">
+            <span />
+            <h1>Monday</h1>
+            <h1>Tuesday</h1>
+            <h1>Wensday</h1>
+            <h1>Thursday</h1>
+            <h1>Friday</h1>
+
+            <h2>Period 1</h2>
+
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+
+            <h2>Period 2</h2>
+
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+
+            <h2>Break 1</h2>
+
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+
+            <h2>Period 3</h2>
+
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+
+            <h2>Period 4</h2>
+
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+
+            <h2>Break 2</h2>
+
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+
+            <h2>Period 5</h2>
+
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    );
+}
+function SchoolMap() {
+    return (
+        <iframe
+            src="https://www.openstreetmap.org/export/embed.html?bbox=152.94091%2C-27.17225&amp;layer=mapnik"
+            style={{ border: "none" }}
+        ></iframe>
+    );
 }

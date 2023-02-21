@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5% 10% 0% 10%;
+    padding: 1vh 10% 0 10%;
 }
 .header-pfp {
     height: 100%;
@@ -47,31 +47,53 @@
     height: 100vh;
 }
 .main-content {
-    margin: 0 30%;
-    margin-top: 7.5vh;
+    display: grid;
+    grid-template-columns: 4fr 4fr;
+    grid-gap: 2.5%;
+    margin: 2.5vh 5vw;
 }
 .main-content-table {
-    display: grid;
-    grid-template-columns: 1.5fr repeat(5, 2fr);
-    grid-template-rows: 1fr repeat(2, 2fr) 1.5fr repeat(2, 2fr) 1.5fr 2fr;
-    grid-gap: 1.25%;
-    width: 100%;
     aspect-ratio: 1/1;
     background-color: #0e0e0e;
     border-radius: 10px;
     padding: 20px;
 }
-.main-content-table h1 {
-    font-size: 1.5em;
-    text-align: center;
+.main-content-table {
+    display: grid;
+    grid-template-columns: 1.5fr repeat(5, 2fr);
+    grid-template-rows: 1fr repeat(2, 2fr) 1.5fr repeat(2, 2fr) 1.5fr 2fr;
+    grid-gap: 1%;
 }
-.main-content-table h2 {
+.main-content-table-container.map iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+}
+.main-content-table-container.setting {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #0e0e0e;
+    border-radius: 10px;
+    padding: 10px;
+}
+.main-content-table * {
+    background-color: #0e0e0e;
+}
+.main-content-table h1 {
     font-size: 1em;
     text-align: center;
 }
-#lesson {
-    background-color: #101010;
+.main-content-table h2 {
+    font-size: 0.75em;
+    text-align: center;
 }
-#break {
-    background-color: #111111;
+.main-content-table h3 {
+    font-size: 1em;
+    text-align: center;
+}
+.main-content-table div {
+    text-align: center;
 }

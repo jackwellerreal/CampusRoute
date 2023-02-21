@@ -155,7 +155,12 @@ export function Home() {
                     </details>
                     <details className="main-bottom-content-detail">
                         <summary>Is CampusRoute free?</summary>
-                        <p>CampusRoute is 100% free.</p>
+                        <p>
+                            Yes, CampusRoute is a completely free app available
+                            for both Android and iOS devices. There are no
+                            hidden fees or in-app purchases required to access
+                            any of its features.
+                        </p>
                     </details>
                     <details className="main-bottom-content-detail">
                         <summary>

@@ -24,22 +24,21 @@ firebase.initializeApp({
 const auth = firebase.auth();
 
 export function Header() {
-    const [user] = useAuthState(auth);
-
     return (
         <header className="header">
             <nav></nav>
             <nav></nav>
 
-            <nav class="header-pfp-dropdown">
-                <a class="header-pfp-dropdown-btn">
+            <nav className="header-pfp-dropdown">
+                <a className="header-pfp-dropdown-btn">
                     <img
                         src={auth.currentUser.photoURL}
                         className="header-pfp"
                         alt=""
+                        referrerPolicy="no-referrer"
                     />
                 </a>
-                <div class="header-pfp-dropdown-content">
+                <div className="header-pfp-dropdown-content">
                     <button>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
