@@ -15,27 +15,8 @@ export function Footer() {
                     </div>
                     <div className="footer-item-container">
                         <div className="footer-item">
-                            <h1>Links</h1>
-                            <ul>
-                                <li>About Us</li>
-                                <li>Contact Us</li>
-                                <li>FAQ</li>
-                                <li>Copywrite</li>
-                            </ul>
-                        </div>
-                        <div className="footer-item">
-                            <h1>Legal</h1>
-                            <ul>
-                                <li>Terms of Service</li>
-                                <li>Privacy Policy</li>
-                            </ul>
-                        </div>
-                        <div className="footer-item">
-                            <h1>Legal</h1>
-                            <ul>
-                                <li>Terms of Service</li>
-                                <li>Privacy Policy</li>
-                            </ul>
+                            <h1>Made by:</h1>
+                            <h3><a href="https://github.com/what-question-mark" target="_blank">Jack Weller</a></h3>
                         </div>
                     </div>
                 </div>

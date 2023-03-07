@@ -157,6 +157,7 @@ details[open] summary:after {
 }
 .footer-container a {
     text-decoration: underline;
+    cursor: pointer;
 }
 .footer-container-content {
     display: grid;

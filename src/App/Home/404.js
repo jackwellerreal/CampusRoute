@@ -15,9 +15,7 @@ export function NotFound() {
                 <Header />
                 <div className="main-top-content">
                     <h1>404</h1>
-                    <p>
-                        This page doesn't exist.
-                    </p>
+                    <p>You entered the wrong classroom 😭</p>
                 </div>
             </section>
             <Footer />

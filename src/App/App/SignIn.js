@@ -23,18 +23,36 @@ firebase.initializeApp({
 });
 
 const auth = firebase.auth();
+const firestore = firebase.firestore();
 
 export function SignIn() {
     const [user] = useAuthState(auth);
     const navigate = useNavigate();
 
+    const usersCollection = firestore.collection("users");
+
+    const addUser = (e) => {
+        usersCollection.add({
+            userNAME: auth.currentUser.displayName,
+            userID: auth.currentUser.uid,
+            authorPFP: auth.currentUser.photoURL,
+            userCREATED: firebase.firestore.FieldValue.serverTimestamp(),
+        }).then(() => {
+            console.log('User account created & signed in!');
+        })
+    }
+
     const signInWithGoogle = () => {
         let provider = new firebase.auth.GoogleAuthProvider();
-        auth.signInWithPopup(provider);
+        auth.signInWithPopup(provider).then((res) => {
+            addUser()
+        });
     };
     const signInWithMicrosoft = () => {
         let provider = new firebase.auth.OAuthProvider("microsoft.com");
-        auth.signInWithPopup(provider);
+        auth.signInWithPopup(provider).then((res) => {
+            addUser()
+        });
     };
 
     if (!user) {

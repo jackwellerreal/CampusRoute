@@ -26,9 +26,7 @@ const auth = firebase.auth();
 export function Header() {
     return (
         <header className="header">
-            <nav></nav>
-            <nav></nav>
-
+            <img src={logo} className="header-logo" alt="" />
             <nav className="header-pfp-dropdown">
                 <a className="header-pfp-dropdown-btn">
                     <img
