@@ -23,8 +23,8 @@ export function Home() {
                     <h1>Campus Route</h1>
                     <p>
                         CampusRoute is a navigation app for university students,
-                        offering real-time directions to classes, attendance
-                        tracking, and class transition notifications for a
+                        offering real-time directions to classes, homework reminders, 
+                        and class transition notifications for a
                         seamless campus experience.
                     </p>
                 </div>

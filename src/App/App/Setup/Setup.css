@@ -1,0 +1,38 @@
+@import url(../../../Styles.css);
+
+.main-top {
+    display: flex;
+    flex-flow: column;
+}
+
+.header {
+    flex: 0 1 auto;
+}
+
+.setup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 auto;
+}
+
+.setup-main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: #0d0d0d;
+    box-shadow: 0px 0px 25px 1px #0d0d0d;
+    padding: 2em;
+    border-radius: 20px;
+    width: 60vw;
+    height: 60vh;
+}
+
+.setup-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.setup-photo img {
+    width: 100%;
+}

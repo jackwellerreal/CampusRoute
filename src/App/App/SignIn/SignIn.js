@@ -3,8 +3,8 @@ import { useNavigate } from "react-router-dom";
 
 import "./SignIn.css";
 
-import logo from "../../Assets/logo.svg";
-import logoBig from "../../Assets/logoBig.svg";
+import logo from "../../../Assets/logo.svg";
+import logoBig from "../../../Assets/logoBig.svg";
 
 import firebase from "firebase/compat/app";
 import "firebase/compat/firestore";

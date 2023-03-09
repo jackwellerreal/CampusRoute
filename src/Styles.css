@@ -88,10 +88,10 @@ img {
     -webkit-user-drag: none;
     -webkit-user-select: none;
 }
-
-grammarly-desktop-integration {
-    display: none;
-}
-grammarly-underline {
+grammarly-extension,
+grammarly-desktop-integration,
+grammarly-underline,
+grammarly-dictionary-card,
+grammarly-popups {
     display: none;
 }

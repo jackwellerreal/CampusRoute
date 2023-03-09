@@ -1,6 +1,7 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
-import "../App.css";
+import "../App/App.css";
 
 import logo from "../../../Assets/logo.svg";
 import logoBig from "../../../Assets/logoBig.svg";
@@ -24,6 +25,8 @@ firebase.initializeApp({
 const auth = firebase.auth();
 
 export function Header() {
+    const navigate = useNavigate();
+
     return (
         <header className="header">
             <img src={logo} className="header-logo" alt="" />
@@ -37,7 +40,12 @@ export function Header() {
                     />
                 </a>
                 <div className="header-pfp-dropdown-content">
-                    <button>
+                    <button
+                        onClick={() => {
+                            if(window.location.pathname.endsWith('/settings')) {}
+                            else {navigate("./settings");}
+                        }}
+                    >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             style={{

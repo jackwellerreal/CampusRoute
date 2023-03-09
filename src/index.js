@@ -3,8 +3,10 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import { Home } from "./App/Home/Home";
-import { SignIn } from "./App/App/SignIn";
-import { App } from "./App/App/App";
+import { SignIn } from "./App/App/SignIn/SignIn";
+import { App } from "./App/App/App/App";
+import { AppEdit } from "./App/App/Edit/Edit";
+import { AppSettings } from "./App/App/Settings/Settings";
 import { NotFound } from "./App/Home/404";
 
 const router = createBrowserRouter([
@@ -19,6 +21,14 @@ const router = createBrowserRouter([
     {
         path: "/app",
         element: <App />,
+    },
+    {
+        path: "/app/edit",
+        element: <AppEdit />,
+    },
+    {
+        path: "/app/settings",
+        element: <AppSettings />,
     },
     {
         path: "*",

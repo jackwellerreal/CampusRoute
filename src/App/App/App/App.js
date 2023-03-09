@@ -3,10 +3,10 @@ import { useNavigate } from "react-router-dom";
 
 import "./App.css";
 
-import { Header } from "./Components/Header";
+import { Header } from "../Components/Header";
 
-import logo from "../../Assets/logo.svg";
-import logoBig from "../../Assets/logoBig.svg";
+import logo from "../../../Assets/logo.svg";
+import logoBig from "../../../Assets/logoBig.svg";
 
 import firebase from "firebase/compat/app";
 import "firebase/compat/firestore";
@@ -32,19 +32,17 @@ export function App() {
 
     if (user) {
         return (
-            <>
-                <section className="main-top">
-                    <Header />
-                    <div className="main-content">
-                        <div className="main-content-table-container">
-                            <Timetable />
-                        </div>
-                        <div className="main-content-table-container map">
-                            <SchoolMap />
-                        </div>
+            <section className="main-top">
+                <Header />
+                <div className="main-content">
+                    <div className="main-content-table-container">
+                        <Timetable />
                     </div>
-                </section>
-            </>
+                    <div className="main-content-table-container map">
+                        <SchoolMap />
+                    </div>
+                </div>
+            </section>
         );
     } else {
         return navigate("/signin");
@@ -122,7 +120,7 @@ function Timetable() {
 function SchoolMap() {
     return (
         <iframe
-            src="https://www.openstreetmap.org/export/embed.html?bbox=152.94091%2C-27.17225&amp;layer=mapnik"
+            src="https://www.openstreetmap.org/export/embed.html"
             style={{ border: "none" }}
         ></iframe>
     );

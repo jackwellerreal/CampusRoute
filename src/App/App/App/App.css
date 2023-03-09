@@ -1,4 +1,4 @@
-@import url(../../Styles.css);
+@import url(../../../Styles.css);
 
 .header {
     width: 100%;
@@ -50,7 +50,7 @@
     display: grid;
     grid-template-columns: 4fr 4fr;
     grid-gap: 2.5%;
-    margin: 2.5vh 5vw;
+    margin: 2.5vh 10vw;
 }
 .main-content-table {
     aspect-ratio: 1/1;

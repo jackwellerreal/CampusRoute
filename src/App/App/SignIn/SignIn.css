@@ -1,10 +1,10 @@
-@import url(../../Styles.css);
+@import url(../../../Styles.css);
 
 .body {
     height: 100vh;
     display: flex;
     justify-content: center;
-    background: url("../../Assets/bg.svg");
+    background: url("../../../Assets/bg.svg");
     background-size: cover;
     background-position: center;
 }
