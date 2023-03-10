@@ -30,6 +30,8 @@ firebase.initializeApp({
 const auth = firebase.auth();
 
 export function Setup() {
+    const [step, setStep] = useState(0);
+
     const [user] = useAuthState(auth);
     const navigate = useNavigate();
 
@@ -38,7 +40,36 @@ export function Setup() {
             <div class="setup-container">
                 <div className="setup-main">
                     <div className="setup-content">
-
+                        {step === 0 ? (
+                            <>
+                                <div>
+                                    <h1>Let's Get Started</h1>
+                                    <p>
+                                        Welcome to the CampusRoute setup page!
+                                        We're excited to join you on your
+                                        university journey and provide you with
+                                        a seamless navigation and organization
+                                        experience. By setting up CampusRoute,
+                                        you'll have access to real-time
+                                        directions to classes, reminders for
+                                        homework and assignments, and class
+                                        transition notifications. With our
+                                        user-friendly interface and helpful
+                                        features, you can focus on what's
+                                        important - your academic goals.
+                                    </p>
+                                </div>
+                                <button
+                                    onClick={() => {
+                                        setStep(step + 1);
+                                    }}
+                                >
+                                    Got it!
+                                </button>
+                            </>
+                        ) : (
+                            <p>ok</p>
+                        )}
                     </div>
                     <div className="setup-photo">
                         <img src={infoSchool} alt="" />

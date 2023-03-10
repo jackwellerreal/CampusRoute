@@ -19,12 +19,13 @@
 .setup-main {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    grid-gap: 10%;
+    width: 60vw;
+    height: 60vh;
+    border-radius: 20px;
     background-color: #0d0d0d;
     box-shadow: 0px 0px 25px 1px #0d0d0d;
     padding: 2em;
-    border-radius: 20px;
-    width: 60vw;
-    height: 60vh;
 }
 
 .setup-photo {
@@ -35,4 +36,23 @@
 
 .setup-photo img {
     width: 100%;
+}
+
+.setup-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.setup-content p {
+    font-size: larger;
+}
+
+.setup-content button {
+    font-weight: 600;
+    font-size: x-large;
+    border-radius: 10px;
+    padding: 0.5em;
+    cursor: pointer;
+    border: none;
 }

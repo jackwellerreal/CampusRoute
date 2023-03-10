@@ -171,6 +171,13 @@ details[open] summary:after {
 }
 .footer-item ul {
     list-style-type: none;
+    width: 48px;
+    float: right;
+}
+.footer-item a>img {
+    display: block;
+    height: 48px;
+    margin-bottom: 8px;
 }
 .footer-acknowledgement {
     padding: 2em 0 0.5em 0;
@@ -179,4 +186,10 @@ details[open] summary:after {
 .footer-acknowledgement-content {
     font-size: 16px;
     font-weight: 500;
+}
+
+.footer-gradient {
+    height: 0.5em;
+    background-size: 200%;
+    background-image: linear-gradient(90deg, var(--brand-1), var(--brand-2), var(--brand-3), var(--brand-4), var(--brand-5));
 }
