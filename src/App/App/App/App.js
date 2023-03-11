@@ -120,7 +120,7 @@ function Timetable() {
 function SchoolMap() {
     return (
         <iframe
-            src="https://www.openstreetmap.org/export/embed.html"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=152.93805062770844%2C-27.174736806998045%2C152.94513165950778%2C-27.17048462278853"
             style={{ border: "none" }}
         ></iframe>
     );

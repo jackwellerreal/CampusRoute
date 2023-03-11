@@ -22,6 +22,12 @@ export function Footer() {
                         </div>
                         <div className="footer-item-container">
                             <div className="footer-item">
+                                <h1>Legal</h1>
+                                <ul>
+                                    <li><a href="../tos">Terms of Service</a></li>
+                                </ul>
+                            </div>
+                            <div className="footer-item">
                                 <h1>Made by:</h1>
                                 <h3>
                                     <a
@@ -33,8 +39,7 @@ export function Footer() {
                                     </a>
                                 </h3>
                             </div>
-                            <div className="footer-item"></div>
-                            <div className="footer-item">
+                            <div className="footer-item social">
                                 <ul>
                                     <a href="https://github.com/What-Question-Mark/campusRoute" target="_blank" rel="noreferrer"><img src={brandGithub} /></a>
                                 </ul>
