@@ -32,26 +32,28 @@ export function SignIn() {
     const usersCollection = firestore.collection("users");
 
     const addUser = (e) => {
-        usersCollection.add({
-            userNAME: auth.currentUser.displayName,
-            userID: auth.currentUser.uid,
-            authorPFP: auth.currentUser.photoURL,
-            userCREATED: firebase.firestore.FieldValue.serverTimestamp(),
-        }).then(() => {
-            console.log('User account created & signed in!');
-        })
-    }
+        usersCollection
+            .add({
+                userNAME: auth.currentUser.displayName,
+                userID: auth.currentUser.uid,
+                authorPFP: auth.currentUser.photoURL,
+                userCREATED: firebase.firestore.FieldValue.serverTimestamp(),
+            })
+            .then(() => {
+                console.log("User account created & signed in!");
+            });
+    };
 
     const signInWithGoogle = () => {
         let provider = new firebase.auth.GoogleAuthProvider();
         auth.signInWithPopup(provider).then((res) => {
-            addUser()
+            addUser();
         });
     };
     const signInWithMicrosoft = () => {
         let provider = new firebase.auth.OAuthProvider("microsoft.com");
         auth.signInWithPopup(provider).then((res) => {
-            addUser()
+            addUser();
         });
     };
 
@@ -59,6 +61,7 @@ export function SignIn() {
         return (
             <div className="body">
                 <div className="container">
+                    {/*
                     <h1>Sign In</h1>
                     <button onClick={signInWithGoogle} id="googleButton">
                         Sign In with Google
@@ -66,6 +69,12 @@ export function SignIn() {
                     <button onClick={signInWithMicrosoft} id="msButton">
                         Sign In with Microsoft
                     </button>
+                    */}
+                    <iframe
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSdmODRlQMFb5LLmdDLjVsjtpj3DJwHSXZz1zKifzQGYHdS5oQ/viewform?embedded=true"
+                    >
+                        Loading…
+                    </iframe>
                 </div>
             </div>
         );
