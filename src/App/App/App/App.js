@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import "./App.css";
 
 import { Header } from "../Components/Header";
+import { Setup } from "../Setup/Setup";
 
 import logo from "../../../Assets/logo.svg";
 import logoBig from "../../../Assets/logoBig.svg";
@@ -120,7 +121,7 @@ function Timetable() {
 function SchoolMap() {
     return (
         <iframe
-            src="https://www.openstreetmap.org/export/embed.html?bbox=152.93805062770844%2C-27.174736806998045%2C152.94513165950778%2C-27.17048462278853"
+            src="https://www.openstreetmap.org/export/embed.html"
             style={{ border: "none" }}
         ></iframe>
     );

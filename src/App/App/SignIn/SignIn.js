@@ -2,6 +2,7 @@ import React, { useState, useEffect, useDebugValue } from "react";
 import { useNavigate } from "react-router-dom";
 
 import "./SignIn.css";
+import { Setup } from "../Setup/Setup";
 
 import logo from "../../../Assets/logo.svg";
 import logoBig from "../../../Assets/logoBig.svg";
@@ -11,6 +12,7 @@ import "firebase/compat/firestore";
 import "firebase/compat/auth";
 
 import { useAuthState } from "react-firebase-hooks/auth";
+import { fetchSignInMethodsForEmail } from "firebase/auth";
 
 firebase.initializeApp({
     apiKey: "AIzaSyAeeTvV_czzoX_qxVOgRMxrE1aNEo6SMgQ",
@@ -70,9 +72,7 @@ export function SignIn() {
                         Sign In with Microsoft
                     </button>
                     */}
-                    <iframe
-                        src="https://docs.google.com/forms/d/e/1FAIpQLSdmODRlQMFb5LLmdDLjVsjtpj3DJwHSXZz1zKifzQGYHdS5oQ/viewform?embedded=true"
-                    >
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdmODRlQMFb5LLmdDLjVsjtpj3DJwHSXZz1zKifzQGYHdS5oQ/viewform?embedded=true">
                         Loading…
                     </iframe>
                 </div>
