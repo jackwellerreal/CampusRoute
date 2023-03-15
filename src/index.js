@@ -17,7 +17,7 @@ const router = createBrowserRouter([
     },
     {
         path: "/tos",
-        element: <TermsOfService />
+        element: <TermsOfService />,
     },
     {
         path: "/signin",
@@ -41,7 +41,6 @@ const router = createBrowserRouter([
     },
 ]);
 
-
 for (let i = 0; i < 10; i++) {
     console.log(
         "%cStop!",
@@ -56,6 +55,8 @@ for (let i = 0; i < 10; i++) {
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <React.StrictMode>
-        <RouterProvider router={router} />
+        <div className="branding-blue">
+            <RouterProvider router={router} />
+        </div>
     </React.StrictMode>
 );

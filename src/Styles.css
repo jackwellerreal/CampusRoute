@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
-:root { 
+:root {
     /* Colors */
     --red-10: #f8d5da;
     --red-20: #f1abb4;
@@ -43,15 +43,33 @@
     --rainbow-30: linear-gradient(90deg, var(--red-30) 0%, var(--orange-30) 20%, var(--yellow-30) 40%, var(--green-30) 60%, var(--blue-30) 80%, var(--purple-30) 100%);
     --rainbow-40: linear-gradient(90deg, var(--red-40) 0%, var(--orange-40) 20%, var(--yellow-40) 40%, var(--green-40) 60%, var(--blue-40) 80%, var(--purple-40) 100%);
     --rainbow-50: linear-gradient(90deg, var(--red-50) 0%, var(--orange-50) 20%, var(--yellow-50) 40%, var(--green-50) 60%, var(--blue-50) 80%, var(--purple-50) 100%);
+}
 
-    /* Brand Colours */
-
+.branding-blue {
     --brand-0: #ffffff;
     --brand-1: #6198ff;
     --brand-2: #3c80ff;
     --brand-3: #0066ff;
     --brand-4: #0059dd;
     --brand-5: #004cbb;
+}
+
+.branding-purple {
+    --brand-0: #ffffff;
+    --brand-1: #ff61f7;
+    --brand-2: #ff3df5;
+    --brand-3: #ff00ff;
+    --brand-4: #db00db;
+    --brand-5: #bd00bd;
+}
+
+.branding-teal {
+    --brand-0: #ffffff;
+    --brand-1: #61fff2;
+    --brand-2: #3dffef;
+    --brand-3: #00ffdd;
+    --brand-4: #00dbbe;
+    --brand-5: #00bda4;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -64,7 +82,7 @@
     * {
         color-scheme: light;
     }
-}  
+}
 
 * {
     margin: 0;
@@ -72,22 +90,26 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
 body {
     background: #121212;
     color: #fff;
 }
+
 a {
     text-decoration: none;
     color: #fff;
     font-weight: 500;
 }
+
 img {
-    user-select: none; 
+    user-select: none;
     -ms-user-select: none;
     -moz-user-select: none;
     -webkit-user-drag: none;
     -webkit-user-select: none;
 }
+
 grammarly-extension,
 grammarly-desktop-integration,
 grammarly-underline,
