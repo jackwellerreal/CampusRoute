@@ -198,14 +198,22 @@ details[open] summary:after {
 }
 
 .footer-item ul {
+    width:fit-content;
     list-style-type: none;
+}
+
+.footer-item li {
+    display: block;
+}
+
+.footer-item.social > ul {
+    float: right;
 }
 
 .footer-item a>img {
     display: block;
     height: 48px;
     margin-bottom: 8px;
-    float: right;
 }
 
 .footer-acknowledgement {

@@ -5,7 +5,8 @@ import "../Home.css";
 import logo from "../../../Assets/logo.svg";
 import logoBig from "../../../Assets/logoBig.svg";
 
-import brandGithub from "../../../Assets/brands/github.svg"
+import brandGithub from "../../../Assets/brands/github.svg";
+import brandTwitter from "../../../Assets/brands/twitter.svg";
 
 export function Footer() {
     return (
@@ -24,7 +25,9 @@ export function Footer() {
                             <div className="footer-item">
                                 <h1>Legal</h1>
                                 <ul>
-                                    <li><a href="../tos">Terms of Service</a></li>
+                                    <li>
+                                        <a href="../tos">Terms of Service</a>
+                                    </li>
                                 </ul>
                             </div>
                             <div className="footer-item">
@@ -41,7 +44,24 @@ export function Footer() {
                             </div>
                             <div className="footer-item social">
                                 <ul>
-                                    <a href="https://github.com/What-Question-Mark/campusRoute" target="_blank" rel="noreferrer"><img src={brandGithub} /></a>
+                                    <li>
+                                        <a
+                                            href="https://github.com/What-Question-Mark/campusRoute"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <img src={brandGithub} />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://twitter.com/CampusRouteAU"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <img src={brandTwitter} />
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
