@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import "./Settings.css";
 
 import { Header } from "../Components/Header";
+import { Setup } from "../Setup/Setup";
 
 import logo from "../../../Assets/logo.svg";
 import logoBig from "../../../Assets/logoBig.svg";
@@ -34,6 +35,7 @@ export function AppSettings() {
         return (
             <div className="main-top">
                 <Header />
+                <Setup />
             </div>
         );
     } else {

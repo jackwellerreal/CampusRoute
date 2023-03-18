@@ -57,64 +57,159 @@ function Timetable() {
             <h1>Monday</h1>
             <h1>Tuesday</h1>
             <h1>Wensday</h1>
-            <h1>Thursday</h1>
+            <h1 id="current-day">Thursday</h1>
             <h1>Friday</h1>
 
             <h2>Period 1</h2>
 
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>
+                <h1>8:30 - 9:30</h1>
+                <h1>Media</h1>
+            </div>
+            <div>
+                <h1>8:30 - 9:30</h1>
+                <h1>Science</h1>
+            </div>
+            <div>
+                <h1>8:30 - 9:30</h1>
+                <h1>Japanese</h1>
+            </div>
+            <div id="current-day">
+                <h1>8:30 - 9:30</h1>
+                <h1>Maths</h1>
+            </div>
+            <div>
+                <h1>8:30 - 9:30</h1>
+                <h1>Japanese</h1>
+            </div>
 
             <h2>Period 2</h2>
 
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>
+                <h1>9:30 - 10:30</h1>
+                <h1>Hass</h1>
+            </div>
+            <div>
+                <h1>9:30 - 10:30</h1>
+                <h1>English</h1>
+            </div>
+            <div>
+                <h1>9:30 - 10:30</h1>
+                <h1>ACT</h1>
+            </div>
+            <div id="current-day">
+                <h1>9:30 - 10:30</h1>
+                <h1>Japanese</h1>
+            </div>
+            <div>
+                <h1>9:30 - 10:30</h1>
+                <h1>Digital Technologies</h1>
+            </div>
 
             <h2>Break 1</h2>
 
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>
+                <h1>10:30 - 11:00</h1>
+            </div>
+            <div>
+                <h1>10:30 - 11:00</h1>
+            </div>
+            <div>
+                <h1>10:30 - 11:00</h1>
+            </div>
+            <div id="current-day">
+                <h1>10:30 - 11:00</h1>
+            </div>
+            <div>
+                <h1>10:30 - 11:00</h1>
+            </div>
 
             <h2>Period 3</h2>
 
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>
+                <h1>11:00 - 12:00</h1>
+                <h1>Maths</h1>
+            </div>
+            <div>
+                <h1>11:00 - 12:00</h1>
+                <h1>Hass</h1>
+            </div>
+            <div>
+                <h1>11:00 - 12:00</h1>
+                <h1>Media</h1>
+            </div>
+            <div id="current-day">
+                <h1>11:00 - 12:00</h1>
+                <h1>Science</h1>
+            </div>
+            <div>
+                <h1>11:00 - 12:00</h1>
+                <h1>Science</h1>
+            </div>
 
             <h2>Period 4</h2>
 
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>
+                <h1>12:00 - 1:00</h1>
+                <h1>Digital Technologies</h1>
+            </div>
+            <div>
+                <h1>12:00 - 1:00</h1>
+                <h1>Digital Technologies</h1>
+            </div>
+            <div>
+                <h1>12:00 - 1:00</h1>
+                <h1>Maths</h1>
+            </div>
+            <div id="current-day">
+                <h1>12:00 - 1:00</h1>
+                <h1>Media</h1>
+            </div>
+            <div>
+                <h1>12:00 - 1:00</h1>
+                <h1>Hass</h1>
+            </div>
 
             <h2>Break 2</h2>
 
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>
+                <h1>1:00 - 1:30</h1>
+            </div>
+            <div>
+                <h1>1:00 - 1:30</h1>
+            </div>
+            <div>
+                <h1>1:00 - 1:30</h1>
+            </div>
+            <div id="current-day">
+                <h1>1:00 - 1:30</h1>
+            </div>
+            <div>
+                <h1>1:00 - 1:30</h1>
+            </div>
 
             <h2>Period 5</h2>
 
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>
+                <h1>1:30 - 2:30</h1>
+                <h1>English</h1>
+            </div>
+            <div>
+                <h1>1:30 - 2:30</h1>
+                <h1>Maths</h1>
+            </div>
+            <div>
+                <h1>1:30 - 2:30</h1>
+                <h1>Conenct</h1>
+            </div>
+            <div id="current-day">
+                <h1>1:30 - 2:30</h1>
+                <h1>English</h1>
+            </div>
+            <div>
+                <h1>1:30 - 2:30</h1>
+                <h1>English</h1>
+            </div>
         </div>
     );
 }

@@ -163,7 +163,7 @@ export function Setup() {
                                     </>
                                 ) : (
                                     <>
-                                        {navigate('../app')}
+                                        {navigate('../appr')}
                                     </>
                                 )}
                             </>
