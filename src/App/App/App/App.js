@@ -33,7 +33,7 @@ export function App() {
 
     if (user) {
         return (
-            <section className="main-top">
+            <section className="main-top" id="app">
                 <Header />
                 <div className="main-content">
                     <div className="main-content-table-container">

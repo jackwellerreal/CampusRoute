@@ -32,7 +32,7 @@ export function Footer() {
                             </div>
                             <div className="footer-item">
                                 <h1>Made by:</h1>
-                                <h3>
+                                <h3 style={{ textAlign: "start" }}>
                                     <a
                                         href="https://github.com/what-question-mark"
                                         target="_blank"

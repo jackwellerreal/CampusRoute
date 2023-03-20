@@ -33,6 +33,7 @@ const auth = firebase.auth();
 
 export function Setup() {
     const [step, setStep] = useState(0);
+    const [totalSteps] = useState(2);
     const [selectedSchool, setSelectedSchool] = useState("");
 
     const [user] = useAuthState(auth);
@@ -44,24 +45,24 @@ export function Setup() {
             name: "Narangba Valley State High School, 4504",
             coordinates: {
                 latitude: -27.172588348388672,
-                longitude: 152.94122314453125
-            }
+                longitude: 152.94122314453125,
+            },
         },
         {
             id: 1,
             name: "Burpengary State Secondary College, 4505",
             coordinates: {
                 latitude: -27.171745107086906,
-                longitude: 152.9775635172628
-            }
+                longitude: 152.9775635172628,
+            },
         },
         {
             id: 2,
             name: "Caboolture State High School, 4510",
             coordinates: {
                 latitude: -27.0833849,
-                longitude: 152.9618494
-            }
+                longitude: 152.9618494,
+            },
         },
     ];
 
@@ -151,6 +152,9 @@ export function Setup() {
                                             >
                                                 Back
                                             </button>
+                                            <h1>
+                                                {step}/{totalSteps}
+                                            </h1>
                                             <button
                                                 disabled={!selectedSchool}
                                                 onClick={() => {
@@ -163,7 +167,33 @@ export function Setup() {
                                     </>
                                 ) : (
                                     <>
-                                        {navigate('../appr')}
+                                        <div>
+                                            <h1>Is this the correct school?</h1>
+                                            <iframe
+                                                src={`https://www.openstreetmap.org/export/embed.html?bbox=${selectedSchool.coordinates.longitude}%2C${selectedSchool.coordinates.latitude}`}
+                                                style={{ border: "none", width: "100%", height: "25em" }}
+                                            ></iframe>
+                                        </div>
+                                        <div className="setup-buttons">
+                                            <button
+                                                onClick={() => {
+                                                    setStep(step - 1);
+                                                }}
+                                            >
+                                                No
+                                            </button>
+                                            <h1>
+                                                {step}/{totalSteps}
+                                            </h1>
+                                            <button
+                                                disabled={!selectedSchool}
+                                                onClick={() => {
+                                                    setStep(step + 1);
+                                                }}
+                                            >
+                                                Yes
+                                            </button>
+                                        </div>
                                     </>
                                 )}
                             </>
