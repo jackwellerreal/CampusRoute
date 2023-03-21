@@ -7,6 +7,7 @@ import { Footer } from "./Components/Footer";
 
 import logo from "../../Assets/logo.svg";
 import logoBig from "../../Assets/logoBig.svg";
+import ad from "../../Assets/branding/ad.png";
 import infoHomework from "../../Assets/undraw/homework.svg";
 import infoMap from "../../Assets/undraw/map.svg";
 import infoNotification from "../../Assets/undraw/notification.svg";
