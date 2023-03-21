@@ -20,7 +20,6 @@ export function Home() {
         <>
             <section className="main-top">
                 <Header />
-                <img class={ad}></img>
                 <div className="main-top-content">
                     <h1>Campus Route</h1>
                     <p>
