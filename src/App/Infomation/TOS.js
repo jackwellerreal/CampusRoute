@@ -21,7 +21,7 @@ export function TermsOfService() {
                 <Header />
                 <div
                     className="main-top-content"
-                    style={{ margin: "0 10%", textAlign: "start" }}
+                    style={{ margin: "6.5vh 10% 0 10%", textAlign: "start" }}
                 >
                     <h1>Terms of Service</h1>
                     <p style={{ height: "75vh", overflowY: "scroll" }}>

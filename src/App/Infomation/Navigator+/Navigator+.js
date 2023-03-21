@@ -26,6 +26,11 @@ export function NavigatorPlus() {
                             better
                         </span>
                     </h1>
+                    <ul className="main-top-content-plan-list">
+                        <li className="main-top-content-plan-list-item">
+                            Soon™
+                        </li>
+                    </ul>
                     <div className="main-top-content-plans">
                         <div className="main-top-content-plan">
                             <h2 className="main-top-content-plan-header">
@@ -33,7 +38,6 @@ export function NavigatorPlus() {
                             </h2>
 
                             <h4 className="main-top-content-plan-price">
-                                ${" "}
                                 <span
                                     className="main-top-content-plan-price-int"
                                     style={{
@@ -58,7 +62,6 @@ export function NavigatorPlus() {
                             </h2>
 
                             <h4 className="main-top-content-plan-price">
-                                ${" "}
                                 <span
                                     className="main-top-content-plan-price-int"
                                     style={{
