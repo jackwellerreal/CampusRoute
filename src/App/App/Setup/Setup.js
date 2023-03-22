@@ -33,7 +33,7 @@ const auth = firebase.auth();
 
 export function Setup() {
     const [step, setStep] = useState(0);
-    const [totalSteps] = useState(2);
+    const [totalSteps] = useState(4);
     const [selectedSchool, setSelectedSchool] = useState("");
 
     const [user] = useAuthState(auth);
@@ -167,33 +167,99 @@ export function Setup() {
                                     </>
                                 ) : (
                                     <>
-                                        <div>
-                                            <h1>Is this the correct school?</h1>
-                                            <iframe
-                                                src={`https://www.openstreetmap.org/export/embed.html?bbox=${selectedSchool.coordinates.longitude}%2C${selectedSchool.coordinates.latitude}`}
-                                                style={{ border: "none", width: "100%", height: "25em" }}
-                                            ></iframe>
-                                        </div>
-                                        <div className="setup-buttons">
-                                            <button
-                                                onClick={() => {
-                                                    setStep(step - 1);
-                                                }}
-                                            >
-                                                No
-                                            </button>
-                                            <h1>
-                                                {step}/{totalSteps}
-                                            </h1>
-                                            <button
-                                                disabled={!selectedSchool}
-                                                onClick={() => {
-                                                    setStep(step + 1);
-                                                }}
-                                            >
-                                                Yes
-                                            </button>
-                                        </div>
+                                        {step === 2 ? (
+                                            <>
+                                                <div>
+                                                    <h1>
+                                                        Is this the correct
+                                                        school?
+                                                    </h1>
+                                                    <iframe
+                                                        src={`https://www.openstreetmap.org/export/embed.html?bbox=${selectedSchool.coordinates.longitude}%2C${selectedSchool.coordinates.latitude}`}
+                                                        style={{
+                                                            border: "none",
+                                                            marginTop: "0.5em",
+                                                            width: "85%",
+                                                            height: "20em",
+                                                        }}
+                                                    ></iframe>
+                                                </div>
+                                                <div className="setup-buttons">
+                                                    <button
+                                                        onClick={() => {
+                                                            setStep(step - 1);
+                                                        }}
+                                                    >
+                                                        No
+                                                    </button>
+                                                    <h1>
+                                                        {step}/{totalSteps}
+                                                    </h1>
+                                                    <button
+                                                        disabled={
+                                                            !selectedSchool
+                                                        }
+                                                        onClick={() => {
+                                                            setStep(step + 1);
+                                                        }}
+                                                    >
+                                                        Yes
+                                                    </button>
+                                                </div>
+                                            </>
+                                        ) : (
+                                            <>
+                                                <div>
+                                                    <h1>
+                                                        Please fill in this
+                                                        form:
+                                                    </h1>
+                                                    <div className="setup-error">
+                                                        <strong>WARNING</strong>
+                                                        <p>
+                                                            You cannot change
+                                                            this infomation once
+                                                            you go to the next
+                                                            page!
+                                                        </p>
+                                                    </div>
+                                                    <div className="setup-input-number">
+                                                        <input
+                                                            type="number"
+                                                            min="1"
+                                                            max="7"
+                                                            onChange={(e) => {
+                                                                if(e.target.value > 7) {e.target.value = 7}
+                                                                if(e.target.value < 1) {e.target.value = 1}
+                                                            }}
+                                                            placeholder="Enter how many classes you have each day"
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <div className="setup-buttons">
+                                                    <button
+                                                        onClick={() => {
+                                                            setStep(step - 1);
+                                                        }}
+                                                    >
+                                                        No
+                                                    </button>
+                                                    <h1>
+                                                        {step}/{totalSteps}
+                                                    </h1>
+                                                    <button
+                                                        disabled={
+                                                            !selectedSchool
+                                                        }
+                                                        onClick={() => {
+                                                            setStep(step + 1);
+                                                        }}
+                                                    >
+                                                        Yes
+                                                    </button>
+                                                </div>
+                                            </>
+                                        )}
                                     </>
                                 )}
                             </>
