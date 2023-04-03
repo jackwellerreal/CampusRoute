@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import { Home } from "./App/Home/Home";
-import { TermsOfService } from "./App/Infomation/tos";
+import { TermsOfService } from "./App/Infomation/toes";
 import { Privacy } from "./App/Infomation/Privacy";
 import { NavigatorPlus } from "./App/Infomation/Navigator+/Navigator+";
 import { Status } from './App/Infomation/Status'
