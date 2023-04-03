@@ -29,7 +29,7 @@ export function Footer() {
                                         <a href="../plus">NavigatorPlus</a>
                                     </li>
                                     <li>
-                                        <a href="../status">Status</a>
+                                        <a href="https://stats.uptimerobot.com/NjGPNIZKWp">Status</a>
                                     </li>
                                 </ul>
                             </div>

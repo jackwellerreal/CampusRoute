@@ -6,7 +6,6 @@ import { Home } from "./App/Home/Home";
 import { TermsOfService } from "./App/Infomation/tos";
 import { Privacy } from "./App/Infomation/Privacy";
 import { NavigatorPlus } from "./App/Infomation/Navigator+/Navigator+";
-import { Status } from './App/Infomation/Status'
 import { SignIn } from "./App/App/SignIn/SignIn";
 import { App } from "./App/App/App/App";
 import { AppEdit } from "./App/App/Edit/Edit";
@@ -29,10 +28,6 @@ const router = createBrowserRouter([
     {
         path: "/plus",
         element: <NavigatorPlus />,
-    },
-    {
-        path: "/status",
-        element: <Status />,
     },
     {
         path: "/signin",
