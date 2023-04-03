@@ -102,6 +102,11 @@
 .main-content-table h1, h2, h3 {
     font-size: 1em;
     text-align: center;
+    color: #fff;    
+    background: #fff;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 
 .main-content-table div {

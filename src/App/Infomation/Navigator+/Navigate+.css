@@ -8,7 +8,7 @@ h2 {
     background-clip: text;
     font-weight: 600;
     font-size: 6rem;
-    margin-bottom: 1rem
+    margin-bottom: 0rem
 }
 
 .main-top-content h2 {
@@ -16,13 +16,19 @@ h2 {
     font-size: 3rem
 }
 
-.main-top-content-emphasis {
+.main-top-content h3 {
+    font-weight: 600;
+    font-size: 2rem
+}
+
+.emphasis {
     animation: emphasisScroll 1.5s linear infinite;
     font-weight: 800;
     background-image: linear-gradient(90deg, var(--red-50), var(--orange-50), var(--yellow-50), var(--green-50), var(--blue-50), var(--purple-50), var(--red-50));
     background-clip: text;
     background-size: 200%;
-    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 .main-top-content-plans {
@@ -86,4 +92,13 @@ h2 {
     color: var(--text);
     font-size: 1.25em;
     font-weight: 700
+}
+
+@keyframes emphasisScroll {
+    from {
+        background-position: 0% center;
+    }
+    to {
+        background-position: -200% center;
+    }
 }

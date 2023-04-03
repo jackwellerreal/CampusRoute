@@ -11,7 +11,7 @@ Please note that we reserve the rights not to accept any pull request at our own
 - [ ] I have made sure that the code does not break existing features
 - [ ] I have made sure that the code does not contain intentional security vulnerabilities
 - [ ] I have made sure that the code does not contain intentional bugs/errors
-- [ ] I have made sure that the code is formatted using the [Prettier](https://prettier.io/) code formatter
+- [ ] I have made sure that the code is formatted using the [Prettier](https://prettier.io/) code formatter with the [config settings](../.prettierrc.yml)
 - [ ] I have made sure that the code does not contain typos
 - [ ] I have made sure that the code does not contain unnecessary comments
 

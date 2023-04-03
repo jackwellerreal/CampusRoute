@@ -229,10 +229,46 @@ export function Setup() {
                                                             min="1"
                                                             max="7"
                                                             onChange={(e) => {
-                                                                if(e.target.value > 7) {e.target.value = 7}
-                                                                if(e.target.value < 1) {e.target.value = 1}
+                                                                if (
+                                                                    e.target
+                                                                        .value >
+                                                                    7
+                                                                ) {
+                                                                    e.target.value = 7;
+                                                                }
+                                                                if (
+                                                                    e.target
+                                                                        .value <
+                                                                    1
+                                                                ) {
+                                                                    e.target.value = 1;
+                                                                }
                                                             }}
-                                                            placeholder="Enter how many classes you have each day"
+                                                            placeholder="Enter how many classes do you have each day"
+                                                        />
+                                                    </div>
+                                                    <div className="setup-input-number">
+                                                        <input
+                                                            type="number"
+                                                            min="1"
+                                                            max="3"
+                                                            onChange={(e) => {
+                                                                if (
+                                                                    e.target
+                                                                        .value >
+                                                                    3
+                                                                ) {
+                                                                    e.target.value = 3;
+                                                                }
+                                                                if (
+                                                                    e.target
+                                                                        .value <
+                                                                    1
+                                                                ) {
+                                                                    e.target.value = 1;
+                                                                }
+                                                            }}
+                                                            placeholder="Enter how many breaks do you have each day"
                                                         />
                                                     </div>
                                                 </div>
@@ -242,7 +278,7 @@ export function Setup() {
                                                             setStep(step - 1);
                                                         }}
                                                     >
-                                                        No
+                                                        Back
                                                     </button>
                                                     <h1>
                                                         {step}/{totalSteps}
@@ -255,7 +291,7 @@ export function Setup() {
                                                             setStep(step + 1);
                                                         }}
                                                     >
-                                                        Yes
+                                                        Next
                                                     </button>
                                                 </div>
                                             </>

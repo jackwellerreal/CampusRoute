@@ -91,7 +91,7 @@ export function TermsOfService() {
                             <strong>Entire Agreement:</strong>{"\n"}
                             These terms of service constitute the entire{"\n"}
                             agreement between you and CampusRoute regarding your{"\n"}
-                            use of the app, superseding any prior agreements{"\n"}
+                            {"use of"} the app, superseding any prior agreements{"\n"}
                             between you and CampusRoute.{"\n"}
                         </pre>
                     </p>

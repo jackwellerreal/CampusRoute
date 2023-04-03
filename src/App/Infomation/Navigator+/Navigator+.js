@@ -20,16 +20,15 @@ export function NavigatorPlus() {
             <section className="main-top">
                 <Header />
                 <div className="main-top-content">
-                    <h1>
+                    <h1>Navigator +</h1>
+                    <h3>
                         CampusRoute but{" "}
-                        <span className="main-top-content-emphasis">
+                        <span className="emphasis">
                             better
                         </span>
-                    </h1>
+                    </h3>
                     <ul className="main-top-content-plan-list">
-                        <li className="main-top-content-plan-list-item">
-                            Soon™
-                        </li>
+                        <li className="main-top-content-plan-list-item"></li>
                     </ul>
                     <div className="main-top-content-plans">
                         <div className="main-top-content-plan">

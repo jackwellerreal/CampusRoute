@@ -191,13 +191,13 @@ details[open] summary:after {
 .footer-container-content {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-gap: 10%;
+    grid-gap: 5%;
     padding: 0em 0 2em 0;
 }
 
 .footer-item-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .footer-item ul {
@@ -213,10 +213,25 @@ details[open] summary:after {
     float: right;
 }
 
-.footer-item a>img {
+.footer-item a>svg {
     display: block;
     height: 48px;
     margin-bottom: 8px;
+}
+
+.footer-item a>svg {
+    fill: #fff;
+    transition: 1s ease;
+}
+
+.footer-item-icon.github:hover {
+    filter: drop-shadow(0px 0px 7.5px var(--brand-1));
+    fill: var(--brand-1)
+}
+
+.footer-item-icon.twitter:hover {
+    filter: drop-shadow(0px 0px 7.5px var(--brand-1));
+    fill: var(--brand-1)
 }
 
 .footer-acknowledgement {
@@ -234,13 +249,4 @@ details[open] summary:after {
     background-size: 200%;
     background-image: linear-gradient(90deg, var(--brand-1), var(--brand-2), var(--brand-3), var(--brand-4), var(--brand-5), var(--brand-1));
     animation: emphasisScroll 1.5s linear infinite;
-}
-
-@keyframes emphasisScroll {
-    from {
-        background-position: 0% center;
-    }
-    to {
-        background-position: -200% center;
-    }
 }
