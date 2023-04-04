@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../Home.css";
+import "./Header.css";
 
 import logo from "../../../Assets/logo.svg";
 import logoBig from "../../../Assets/logoBig.svg";

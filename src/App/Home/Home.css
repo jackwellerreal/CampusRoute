@@ -1,21 +1,5 @@
 @import url(../../Styles.css);
 
-.header {
-    width: 100%;
-    height: 10vh;
-    z-index: 100;
-    backdrop-filter: blur(20px);
-    display: flex;
-    position: fixed;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1% 10%;
-}
-
-.header-logo {
-    height: 100%;
-}
-
 .main-top {
     width: 100%;
     height: 100vh;
@@ -170,83 +154,4 @@ details[open] summary:after {
     font-size: 1.5rem;
     margin-bottom: 0;
     text-align: start;
-}
-
-.footer {
-    width: 100%;
-    padding: 1% 15%;
-    background: #1f1f1f;
-}
-
-.footer-container {
-    width: 100%;
-    height: 100%;
-}
-
-.footer-container a {
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.footer-container-content {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-gap: 5%;
-    padding: 0em 0 2em 0;
-}
-
-.footer-item-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
-
-.footer-item ul {
-    width:fit-content;
-    list-style-type: none;
-}
-
-.footer-item li {
-    display: block;
-}
-
-.footer-item.social > ul {
-    float: right;
-}
-
-.footer-item a>svg {
-    display: block;
-    height: 48px;
-    margin-bottom: 8px;
-}
-
-.footer-item a>svg {
-    fill: #fff;
-    transition: 1s ease;
-}
-
-.footer-item-icon.github:hover {
-    filter: drop-shadow(0px 0px 7.5px var(--brand-1));
-    fill: var(--brand-1)
-}
-
-.footer-item-icon.twitter:hover {
-    filter: drop-shadow(0px 0px 7.5px var(--brand-1));
-    fill: var(--brand-1)
-}
-
-.footer-acknowledgement {
-    padding: 2em 0 0.5em 0;
-    border-top: 2px solid #f5f6f7;
-}
-
-.footer-acknowledgement-content {
-    font-size: 16px;
-    font-weight: 500;
-}
-
-.footer-gradient {
-    height: 0.5em;
-    background-size: 200%;
-    background-image: linear-gradient(90deg, var(--brand-1), var(--brand-2), var(--brand-3), var(--brand-4), var(--brand-5), var(--brand-1));
-    animation: emphasisScroll 1.5s linear infinite;
 }
