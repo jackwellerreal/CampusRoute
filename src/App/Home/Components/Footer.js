@@ -60,7 +60,7 @@ export function Footer() {
                                 <ul>
                                     <li>
                                         <a
-                                            href="https://github.com/What-Question-Mark/campusRoute"
+                                            href="https://github.com/CampusRoute/CampusRoute"
                                             target="_blank"
                                             rel="noreferrer"
                                         >
