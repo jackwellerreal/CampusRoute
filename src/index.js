@@ -27,26 +27,10 @@ const router = createBrowserRouter([
         path: "/privacy",
         element: <Privacy />,
     },
+    /*
     {
         path: "/plus",
         element: <NavigatorPlus />,
-    },
-    /*
-    {
-        path: "/signin",
-        element: <SignIn />,
-    },
-    {
-        path: "/app",
-        element: <App />,
-    },
-    {
-        path: "/app/edit",
-        element: <AppEdit />,
-    },
-    {
-        path: "/app/settings",
-        element: <AppSettings />,
     },
     */
     {

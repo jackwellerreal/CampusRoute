@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./Footer.css";
+import "../Home.css";
 
 import logo from "../../../Assets/logo.svg";
 import logoBig from "../../../Assets/logoBig.svg";
@@ -25,9 +25,11 @@ export function Footer() {
                                     <li>
                                         <a href="../app">App</a>
                                     </li>
+                                    {/*
                                     <li>
                                         <a href="../plus">NavigatorPlus</a>
                                     </li>
+                                    */}
                                     <li>
                                         <a href="https://stats.uptimerobot.com/2rX63cVqwO">Status</a>
                                     </li>

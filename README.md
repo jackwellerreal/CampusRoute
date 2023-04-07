@@ -7,9 +7,7 @@ CampusRoute is a navigation app for university students, offering real-time dire
 
 ## Contributors 👥
 
-|  [![what-question-mark](https://avatars.githubusercontent.com/u/97435840?v=4&s=80)](https://github.com/what-question-mark) |
-|  :--:  |
-|  [@what-question-mark](https://www.github.com/what-question-mark) |
+[![Contributors](https://contrib.rocks/image?repo=campusroute/campusroute)](https://github.com/campusroute/campusroute/graphs/contributors)
 
 
 ## Contributing 🤝
