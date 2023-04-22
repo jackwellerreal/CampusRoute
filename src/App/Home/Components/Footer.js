@@ -67,7 +67,7 @@ export function Footer() {
                                             rel="noreferrer"
                                         >
                                             <svg xmlns="http://www.w3.org/2000/svg"
-                                                class="footer-item-icon github"
+                                                className="footer-item-icon github"
                                                 viewBox="0 0 496 512">
                                                 {/*Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc.*/}
                                                 <path

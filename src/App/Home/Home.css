@@ -48,6 +48,17 @@
     margin-bottom: 2rem;
 }
 
+.Typewriter__wrapper {
+    font-weight: bold;
+    animation: emphasisScroll 1.5s linear infinite;
+    font-weight: 800;
+    color: #0000;
+    background-image: linear-gradient(90deg, var(--brand-1), var(--brand-2), var(--brand-3), var(--brand-4), var(--brand-5), var(--brand-1));
+    background-clip: text;
+    background-size: 200%;
+    -webkit-background-clip: text;
+}
+
 .main-info {
     width: 100%;
     background: #6198ff;
@@ -244,4 +255,13 @@ details[open] summary:after {
     background-size: 200%;
     background-image: linear-gradient(90deg, var(--brand-1), var(--brand-2), var(--brand-3), var(--brand-4), var(--brand-5), var(--brand-1));
     animation: emphasisScroll 1.5s linear infinite;
+}
+
+@keyframes emphasisScroll {
+    from {
+        background-position: 0% center;
+    }
+    to {
+        background-position: -200% center;
+    }
 }

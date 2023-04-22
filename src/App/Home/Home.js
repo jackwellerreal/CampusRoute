@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
+
+import Typewriter from 'typewriter-effect/dist/core';
 
 import "./Home.css";
 
@@ -16,15 +18,33 @@ import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css/animate.min.css";
 
 export function Home() {
+    useEffect(() => {
+        new Typewriter(document.getElementById("main-top-description"), {
+            strings: [
+                "success",
+                "advancement",
+                "growth"
+            ],
+            autoStart: true,
+            loop: true,
+            delay: 75,
+            cursor: "",
+        }).start();
+    }, []);
+
     return (
         <>
             <section className="main-top">
                 <Header />
                 <div className="main-top-content">
                     <h1>Campus Route</h1>
-                    <p>
-                        
-                    </p>
+                    <div>
+                        <p>
+                            Navigate your way to{" "}
+                            <span id="main-top-description"></span>{" "}
+                            with Campus Route.
+                        </p>
+                    </div>
                 </div>
             </section>
             <section className="main-info">
