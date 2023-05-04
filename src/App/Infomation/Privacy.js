@@ -21,7 +21,7 @@ export function Privacy() {
                 <Header />
                 <div
                     className="main-top-content"
-                    style={{ margin: "6.5vh 10% 0 10%", textAlign: "start" }}
+                    style={{ textAlign: "start" }}
                 >
                     <h1>Privacy Policy</h1>
                     <p style={{ height: "75vh", overflowY: "scroll" }}>

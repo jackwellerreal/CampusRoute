@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Home } from "./App/Home/Home";
 import { TermsOfService } from "./App/Infomation/tos";
 import { Privacy } from "./App/Infomation/Privacy";
+import { Blog } from "./App/Infomation/Blog/blog";
 import { NavigatorPlus } from "./App/Infomation/Navigator+/Navigator+";
 /*
 import { SignIn } from "./App/App/SignIn/SignIn";
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
     {
         path: "/privacy",
         element: <Privacy />,
+    },
+    {
+        path: "/blog",
+        element: <Blog />
     },
     /*
     {
