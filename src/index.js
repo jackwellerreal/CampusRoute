@@ -5,7 +5,6 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Home } from "./App/Home/Home";
 import { TermsOfService } from "./App/Infomation/tos";
 import { Privacy } from "./App/Infomation/Privacy";
-import { Blog } from "./App/Infomation/Blog/blog";
 import { NavigatorPlus } from "./App/Infomation/Navigator+/Navigator+";
 /*
 import { SignIn } from "./App/App/SignIn/SignIn";
@@ -14,6 +13,9 @@ import { AppEdit } from "./App/App/Edit/Edit";
 import { AppSettings } from "./App/App/Settings/Settings";
 */
 import { NotFound } from "./App/Home/404";
+import { Error } from "./error";
+
+import devlogONE from "./App/Infomation/Blog/devlog/one.md"
 
 const router = createBrowserRouter([
     {
@@ -27,10 +29,6 @@ const router = createBrowserRouter([
     {
         path: "/privacy",
         element: <Privacy />,
-    },
-    {
-        path: "/blog",
-        element: <Blog />
     },
     /*
     {
@@ -59,7 +57,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <React.StrictMode>
         <div className="branding-blue">
-            <RouterProvider router={router} />
+            <RouterProvider router={router} errorElement={<h1>error lol</h1>} />
         </div>
     </React.StrictMode>
 );

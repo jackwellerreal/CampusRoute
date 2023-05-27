@@ -6,6 +6,7 @@
         "animate.css": "^4.1.1",
         "aos": "^2.3.4",
         "firebase": "^9.15.0",
+        "fs": "^0.0.1-security",
         "md-block": "^0.0.1",
         "pdf-parse": "^1.1.1",
         "react": "^18.2.0",

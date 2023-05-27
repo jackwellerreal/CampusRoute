@@ -24,7 +24,7 @@ export function Privacy() {
                     style={{ textAlign: "start" }}
                 >
                     <h1>Privacy Policy</h1>
-                    <p style={{ height: "75vh", overflowY: "scroll" }}>
+                    <p style={{ height: "60vh", overflowY: "scroll" }}>
                         <pre>
                             <strong>
                                 Privacy Policy for CampusRoute (based on

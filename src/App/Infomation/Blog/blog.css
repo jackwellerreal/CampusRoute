@@ -1,0 +1,37 @@
+@import url(../../Home/Home.css);
+
+#title {
+    font-size: 4.5rem !important;
+}
+
+.markdown * {
+    background: transparent !important;
+    -webkit-text-fill-color: currentColor !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    color: white !important;
+
+    font-weight: 500 !important;
+}
+
+.markdown h1 {
+    font-size: 3rem !important;
+    margin-top: 0.5em;
+}
+
+.markdown h2 {
+    font-size: 2.5rem !important;
+    margin-top: 0.5em;
+}
+
+.markdown h3 {
+    font-size: 2rem !important;
+}
+
+.markdown p, .markdown li, .markdown ol {
+    font-size: 1.5rem !important;
+}
+
+.markdown a {
+    text-decoration: underline !important;
+}

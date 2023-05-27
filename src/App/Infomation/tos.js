@@ -24,7 +24,7 @@ export function TermsOfService() {
                     style={{ textAlign: "start" }}
                 >
                     <h1>Terms of Service</h1>
-                    <p style={{ height: "75vh", overflowY: "scroll" }}>
+                    <p style={{ height: "60vh", overflowY: "scroll" }}>
                         <pre>
                             The following terms of service ("Terms") apply to{"\n"}
                             every registered user account on Campus Route{"\n"}
