@@ -1,0 +1,48 @@
+@import url(../../Styles.css);
+
+.main-top-content-app {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, 3fr);
+    grid-column-gap: 2.5%;
+}
+
+.app-box {
+    width: 100%;
+    border-radius: 10px;
+    background-color: #2a2a2a;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.75);
+}
+
+.menu {
+    height: 100%;
+    padding: 1em;
+}
+
+.menu-item {
+    border-radius: 10px;
+    padding: 0.35em;
+}
+
+.menu-item.selected {
+    background-color: #414141;
+}
+
+.menu-item p {
+    font-size: 1.65rem;
+    margin: 0;
+}
+
+#menu-icon {
+    vertical-align: -0.125em;
+    margin-right: 0.25em;
+}
+
+.map {
+    aspect-ratio: 1/1;
+}
+
+.timetable {
+    aspect-ratio: 1/1;
+}

@@ -6,9 +6,9 @@ import { Home } from "./App/Home/Home";
 import { TermsOfService } from "./App/Infomation/tos";
 import { Privacy } from "./App/Infomation/Privacy";
 import { NavigatorPlus } from "./App/Infomation/Navigator+/Navigator+";
+import { AppHome } from "./App/App/Home";
 /*
 import { SignIn } from "./App/App/SignIn/SignIn";
-import { App } from "./App/App/App/App";
 import { AppEdit } from "./App/App/Edit/Edit";
 import { AppSettings } from "./App/App/Settings/Settings";
 */
@@ -36,6 +36,10 @@ const router = createBrowserRouter([
         element: <NavigatorPlus />,
     },
     */
+    {
+        path: "/app/home",
+        element: <AppHome />,
+    },
     {
         path: "*",
         element: <NotFound />,

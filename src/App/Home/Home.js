@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 
-import Typewriter from 'typewriter-effect/dist/core';
+import Typewriter from "typewriter-effect/dist/core";
 
 import "./Home.css";
 
@@ -20,11 +20,7 @@ import "animate.css/animate.min.css";
 export function Home() {
     useEffect(() => {
         new Typewriter(document.getElementById("main-top-description"), {
-            strings: [
-                "success",
-                "advancement",
-                "growth"
-            ],
+            strings: ["success", "advancement", "growth"],
             autoStart: true,
             loop: true,
             delay: 75,
@@ -41,8 +37,8 @@ export function Home() {
                     <div>
                         <p>
                             Navigate your way to{" "}
-                            <span id="main-top-description"></span>{" "}
-                            with Campus Route.
+                            <span id="main-top-description"></span> with Campus
+                            Route.
                         </p>
                     </div>
                 </div>
@@ -176,7 +172,7 @@ export function Home() {
                                 for me?
                             </summary>
                             <p>
-                                CampusRoute uses Google Maps satalight
+                                CampusRoute uses OpenStree
                                 technology to determine the quickest and most
                                 efficient route to your classes.
                             </p>
@@ -186,18 +182,18 @@ export function Home() {
                                 Does CampusRoute track my location?
                             </summary>
                             <p>
-                                Yes, CampusRoute uses your device's GPS to
-                                provide real-time navigation and track your
-                                attendance.
+                                Yes, CampusRoute utilizes your device's GPS to
+                                offer real-time navigation without storing any
+                                personal data.
                             </p>
                         </details>
                         <details className="main-bottom-content-detail">
                             <summary>Is CampusRoute free?</summary>
                             <p>
-                                Yes, CampusRoute is a completely free app
-                                available for both Android and iOS devices.
-                                There are no hidden fees or in-app purchases
-                                required to access any of its features.
+                                Indeed, CampusRoute is a fully free app
+                                accessible on Android and iOS devices. While
+                                there is a premium subscription available, it
+                                does not restrict any of the essential features.
                             </p>
                         </details>
                         <details className="main-bottom-content-detail">
