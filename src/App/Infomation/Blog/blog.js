@@ -5,12 +5,6 @@ import "./blog.css";
 import { Header } from "../../Home/Components/Header";
 import { Footer } from "../../Home/Components/Footer";
 
-import logo from "../../../Assets/logo.svg";
-import logoBig from "../../../Assets/logoBig.svg";
-import infoHomework from "../../../Assets/undraw/homework.svg";
-import infoMap from "../../../Assets/undraw/map.svg";
-import infoNotification from "../../../Assets/undraw/notification.svg";
-
 import ReactMarkdown from 'react-markdown';
 
 import { AnimationOnScroll } from "react-animation-on-scroll";

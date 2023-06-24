@@ -1,6 +1,9 @@
 @import url(../../Styles.css);
 
 .main-top-content-app {
+    margin: 0 7.5%;
+    padding-top: 15vh;
+    text-align: center;
     display: grid;
     grid-template-columns: 1fr repeat(2, 3fr);
     grid-column-gap: 2.5%;
@@ -17,7 +20,7 @@
 
 .menu {
     height: 100%;
-    padding: 1em;
+    padding: 1rem;
 }
 
 .menu-item {
@@ -29,8 +32,8 @@
     background-color: #414141;
 }
 
-.menu-item p {
-    font-size: 1.65rem;
+.menu-item a {
+    font-size: 1.5rem;
     margin: 0;
 }
 

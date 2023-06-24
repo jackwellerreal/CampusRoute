@@ -54,7 +54,7 @@ export function Footer() {
                                         target="_blank"
                                         rel="noreferrer"
                                     >
-                                        @whatqm
+                                        whatqm
                                     </a>
                                 </h3>
                             </div>

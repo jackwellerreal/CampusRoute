@@ -10,7 +10,7 @@ export function Header() {
         <header className="header">
             <img src={logo} className="header-logo" alt="" />
             <nav>
-                <a href="./signin">Join Beta Testing</a>
+                <a href="">Coming Soon!</a>
             </nav>
         </header>
     );

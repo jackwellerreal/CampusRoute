@@ -6,11 +6,15 @@ import { Home } from "./App/Home/Home";
 import { TermsOfService } from "./App/Infomation/tos";
 import { Privacy } from "./App/Infomation/Privacy";
 import { NavigatorPlus } from "./App/Infomation/Navigator+/Navigator+";
-import { AppHome } from "./App/App/Home";
+import { Status } from "./App/Infomation/Status"
+
+import { AppRedirect } from "./App/App/Redirect";
+import { AppHome } from "./App/App/Pages/Home";
+import { AppMap } from "./App/App/Pages/Map";
+import { AppTimetable } from "./App/App/Pages/Timetable";
+
 /*
 import { SignIn } from "./App/App/SignIn/SignIn";
-import { AppEdit } from "./App/App/Edit/Edit";
-import { AppSettings } from "./App/App/Settings/Settings";
 */
 import { NotFound } from "./App/Home/404";
 import { Error } from "./error";
@@ -29,6 +33,10 @@ const router = createBrowserRouter([
     {
         path: "/privacy",
         element: <Privacy />,
+    },,
+    {
+        path: "/status",
+        element: <Status />,
     },
     /*
     {
@@ -37,8 +45,20 @@ const router = createBrowserRouter([
     },
     */
     {
+        path: "/app",
+        element: <AppRedirect />,
+    },
+    {
         path: "/app/home",
         element: <AppHome />,
+    },
+    {
+        path: "/app/map",
+        element: <AppMap />,
+    },
+    {
+        path: "/app/timetable",
+        element: <AppTimetable />,
     },
     {
         path: "*",

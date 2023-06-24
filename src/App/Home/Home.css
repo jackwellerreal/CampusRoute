@@ -211,6 +211,10 @@ details[open] summary:after {
     grid-template-columns: repeat(4, 1fr);
 }
 
+.footer-item h1 {
+    font-size: 1.5rem;
+}
+
 .footer-item ul {
     width:fit-content;
     list-style-type: none;
