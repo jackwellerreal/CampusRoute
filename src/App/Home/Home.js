@@ -1,14 +1,18 @@
 import React, { useRef, useEffect } from "react";
-import Typewriter from "typewriter-effect/dist/core";
 import styles from "./Home.module.css";
+
 import { Header } from "./Components/Header";
 import { Footer } from "./Components/Footer";
+
 import logo from "../../Assets/logo.svg";
 import logoBig from "../../Assets/logoBig.svg";
+
 import ad from "../../Assets/branding/ad.png";
-import infoHomework from "../../Assets/undraw/homework.svg";
+import infoSchedule from "../../Assets/undraw/schedule.svg";
 import infoMap from "../../Assets/undraw/map.svg";
 import infoNotification from "../../Assets/undraw/notification.svg";
+
+import Typewriter from "typewriter-effect/dist/core";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css/animate.min.css";
 
@@ -32,8 +36,11 @@ export function Home() {
                     <div>
                         <p>
                             Navigate your way to{" "}
-                            <span className={styles["home-top-description"]} id="home-top-description"></span> with Campus
-                            Route.
+                            <span
+                                className={styles["home-top-description"]}
+                                id="home-top-description"
+                            ></span>{" "}
+                            with Campus Route.
                         </p>
                     </div>
                 </div>
@@ -50,47 +57,35 @@ export function Home() {
                         <div className={styles["home-info-content-item"]}>
                             <img src={infoMap} alt="" />
                             <p>
-                                Our app is the perfect navigation companion for
-                                students, providing real-time directions to all
-                                of your classes. Simply input your class
-                                schedule and CampusRoute will do the rest,
-                                showing you the fastest and most efficient path
-                                to your next class. Whether you're walking,
-                                cycling, or taking public transport, our app has
-                                got you covered with the best route options.
-                                With its intuitive interface and easy-to-follow
-                                directions, you'll arrive at each class with
-                                confidence and on time.
+                                The Class Scheduling feature in Campus Route
+                                ensures students know what class they have next,
+                                providing them with a convenient way to stay
+                                organized and never miss a session. It displays
+                                upcoming classes, including time, location, and
+                                relevant details.
                             </p>
                         </div>
                         <div className={styles["home-info-content-item"]}>
-                            <img src={infoHomework} alt="" />
+                            <img src={infoSchedule} alt="" />
                             <p>
-                                Homework Management is a feature that allows
-                                students to keep track of their assignments, set
-                                reminders for upcoming due dates, and receive
-                                notifications when new homework is assigned by
-                                their teachers. With this feature, students can
-                                stay organized and prioritize their workload,
-                                ensuring they complete all of their homework on
-                                time and to the best of their ability.
+                                With Real-Time Navigation in Campus Route,
+                                students can easily navigate their campus. The
+                                feature offers precise directions and
+                                interactive maps, guiding students to their next
+                                class using the most efficient routes based on
+                                real-time data..
                             </p>
                         </div>
                         <div className={styles["home-info-content-item"]}>
                             <img src={infoNotification} alt="" />
                             <p>
-                                Say goodbye to class scheduling confusion. We
-                                make transitioning between classes a breeze by
-                                sending you real-time notifications when your
-                                current class is over. Not only will you never
-                                have to worry about losing track of time in
-                                class again, but you'll also know exactly what
-                                class you have next and how to get there. No
-                                more rushing through the hallways trying to find
-                                your next class, we got you covered. With our
-                                intuitive interface and helpful reminders,
-                                you'll arrive at each class on time, organized,
-                                and ready to learn.
+                                Class Transition Notifications in Campus Route
+                                keep students informed about their upcoming
+                                classes, sending timely reminders before each
+                                transition. These notifications include class
+                                details, such as name, location, and time,
+                                enabling students to smoothly move from one
+                                class to another with ease.
                             </p>
                         </div>
                     </div>
@@ -169,7 +164,7 @@ export function Home() {
                             </summary>
                             <p>
                                 CampusRoute is designed specifically for high
-                                school and university campuses and may not work
+                                school and university campuses and does not work
                                 for other locations.
                             </p>
                         </details>
@@ -181,9 +176,9 @@ export function Home() {
                                 for me?
                             </summary>
                             <p>
-                                CampusRoute uses OpenStreet technology to
-                                determine the quickest and most efficient route
-                                to your classes.
+                                CampusRoute uses OpenStreetMap (OSM) technology
+                                to determine the quickest and most efficient
+                                route to your classes.
                             </p>
                         </details>
                         <details
@@ -203,10 +198,10 @@ export function Home() {
                         >
                             <summary>Is CampusRoute free?</summary>
                             <p>
-                                Indeed, CampusRoute is a fully free app
-                                accessible on Android and iOS devices. While
-                                there is a premium subscription available, it
-                                does not restrict any of the essential features.
+                                Yes, CampusRoute is a fully free app accessible
+                                on Android and iOS devices. While there is a
+                                premium subscription available, it does not
+                                restrict any of the essential features.
                             </p>
                         </details>
                         <details
