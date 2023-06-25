@@ -1,25 +1,20 @@
 import React, { useRef, useEffect } from "react";
-
 import Typewriter from "typewriter-effect/dist/core";
-
-import "./Home.css";
-
+import styles from "./Home.module.css";
 import { Header } from "./Components/Header";
 import { Footer } from "./Components/Footer";
-
 import logo from "../../Assets/logo.svg";
 import logoBig from "../../Assets/logoBig.svg";
 import ad from "../../Assets/branding/ad.png";
 import infoHomework from "../../Assets/undraw/homework.svg";
 import infoMap from "../../Assets/undraw/map.svg";
 import infoNotification from "../../Assets/undraw/notification.svg";
-
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css/animate.min.css";
 
 export function Home() {
     useEffect(() => {
-        new Typewriter(document.getElementById("main-top-description"), {
+        new Typewriter(document.getElementById("home-top-description"), {
             strings: ["success", "advancement", "growth"],
             autoStart: true,
             loop: true,
@@ -30,20 +25,20 @@ export function Home() {
 
     return (
         <>
-            <section className="main-top">
+            <section className={styles["home-top"]}>
                 <Header />
-                <div className="main-top-content">
+                <div className={styles["home-top-content"]}>
                     <h1>Campus Route</h1>
                     <div>
                         <p>
                             Navigate your way to{" "}
-                            <span id="main-top-description"></span> with Campus
+                            <span className={styles["home-top-description"]} id="home-top-description"></span> with Campus
                             Route.
                         </p>
                     </div>
                 </div>
             </section>
-            <section className="main-info">
+            <section className={styles["home-info"]}>
                 <h1>
                     Streamline Your Education Experience with These Features
                 </h1>
@@ -51,8 +46,8 @@ export function Home() {
                     animateIn="animate__fadeIn"
                     animateOnce={true}
                 >
-                    <div className="main-info-content">
-                        <div className="main-info-content-item">
+                    <div className={styles["home-info-content"]}>
+                        <div className={styles["home-info-content-item"]}>
                             <img src={infoMap} alt="" />
                             <p>
                                 Our app is the perfect navigation companion for
@@ -68,7 +63,7 @@ export function Home() {
                                 confidence and on time.
                             </p>
                         </div>
-                        <div className="main-info-content-item">
+                        <div className={styles["home-info-content-item"]}>
                             <img src={infoHomework} alt="" />
                             <p>
                                 Homework Management is a feature that allows
@@ -81,7 +76,7 @@ export function Home() {
                                 time and to the best of their ability.
                             </p>
                         </div>
-                        <div className="main-info-content-item">
+                        <div className={styles["home-info-content-item"]}>
                             <img src={infoNotification} alt="" />
                             <p>
                                 Say goodbye to class scheduling confusion. We
@@ -101,14 +96,16 @@ export function Home() {
                     </div>
                 </AnimationOnScroll>
             </section>
-            <section className="main-bottom">
-                <div className="main-bottom-content">
+            <section className={styles["home-bottom"]}>
+                <div className={styles["home-bottom-content"]}>
                     <h1>Frequently Asked Questions</h1>
                     <AnimationOnScroll
                         animateIn="animate__fadeIn"
                         animateOnce={true}
                     >
-                        <details className="main-bottom-content-detail">
+                        <details
+                            className={styles["home-bottom-content-detail"]}
+                        >
                             <summary>What is CampusRoute?</summary>
                             <p>
                                 CampusRoute is an app designed to help students
@@ -117,7 +114,9 @@ export function Home() {
                                 their classes.
                             </p>
                         </details>
-                        <details className="main-bottom-content-detail">
+                        <details
+                            className={styles["home-bottom-content-detail"]}
+                        >
                             <summary>
                                 What features does CampusRoute offer?
                             </summary>
@@ -127,7 +126,9 @@ export function Home() {
                                 transition notifications.
                             </p>
                         </details>
-                        <details className="main-bottom-content-detail">
+                        <details
+                            className={styles["home-bottom-content-detail"]}
+                        >
                             <summary>
                                 Is CampusRoute available for both iOS and
                                 Android devices?
@@ -137,14 +138,18 @@ export function Home() {
                                 Android devices.
                             </p>
                         </details>
-                        <details className="main-bottom-content-detail">
+                        <details
+                            className={styles["home-bottom-content-detail"]}
+                        >
                             <summary>Does CampusRoute work offline?</summary>
                             <p>
                                 No, CampusRoute requires a stable internet
                                 connection to function properly.
                             </p>
                         </details>
-                        <details className="main-bottom-content-detail">
+                        <details
+                            className={styles["home-bottom-content-detail"]}
+                        >
                             <summary>
                                 Can I input my own class schedule into
                                 CampusRoute?
@@ -155,7 +160,9 @@ export function Home() {
                                 the quickest route to each class.
                             </p>
                         </details>
-                        <details className="main-bottom-content-detail">
+                        <details
+                            className={styles["home-bottom-content-detail"]}
+                        >
                             <summary>
                                 Can I use CampusRoute for other places besides
                                 high schools/universities?
@@ -166,18 +173,22 @@ export function Home() {
                                 for other locations.
                             </p>
                         </details>
-                        <details className="main-bottom-content-detail">
+                        <details
+                            className={styles["home-bottom-content-detail"]}
+                        >
                             <summary>
                                 How does CampusRoute determine the best route
                                 for me?
                             </summary>
                             <p>
-                                CampusRoute uses OpenStree
-                                technology to determine the quickest and most
-                                efficient route to your classes.
+                                CampusRoute uses OpenStreet technology to
+                                determine the quickest and most efficient route
+                                to your classes.
                             </p>
                         </details>
-                        <details className="main-bottom-content-detail">
+                        <details
+                            className={styles["home-bottom-content-detail"]}
+                        >
                             <summary>
                                 Does CampusRoute track my location?
                             </summary>
@@ -187,7 +198,9 @@ export function Home() {
                                 personal data.
                             </p>
                         </details>
-                        <details className="main-bottom-content-detail">
+                        <details
+                            className={styles["home-bottom-content-detail"]}
+                        >
                             <summary>Is CampusRoute free?</summary>
                             <p>
                                 Indeed, CampusRoute is a fully free app
@@ -196,7 +209,9 @@ export function Home() {
                                 does not restrict any of the essential features.
                             </p>
                         </details>
-                        <details className="main-bottom-content-detail">
+                        <details
+                            className={styles["home-bottom-content-detail"]}
+                        >
                             <summary>
                                 Can I provide feedback or report a problem with
                                 the app?

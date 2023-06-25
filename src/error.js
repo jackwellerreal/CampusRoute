@@ -2,7 +2,7 @@ import React from "react";
 
 import { useRouteError } from "react-router-dom";
 
-import "./App/Home/Home.css";
+import "./App/Home/Home.module.css";
 
 import { Header } from "./App/Home/Components/Header";
 import { Footer } from "./App/Home/Components/Footer";

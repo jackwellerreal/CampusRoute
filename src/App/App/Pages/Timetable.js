@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../App.css";
+import styles from "../App.module.css";
 
 import { Header } from "../../Home/Components/Header";
 import { Footer } from "../../Home/Components/Footer";
@@ -14,10 +14,10 @@ import "animate.css/animate.min.css";
 export function AppTimetable() {
     return (
         <>
-            <section className="main-top">
+            <section className={styles["app-top"]}>
                 <Header />
                 <div
-                    className="main-top-content main-top-content-app"
+                    className={`${styles["app-top-content"]} ${styles["app-top-content-app"]}`}
                     style={{ textAlign: "start" }}
                 >
                     <Menu />

@@ -1,20 +1,15 @@
 import React from "react";
-
-import "../Home/Home.css";
-
 import { Header } from "../Home/Components/Header";
 import { Footer } from "../Home/Components/Footer";
-
-import { AnimationOnScroll } from "react-animation-on-scroll";
-import "animate.css/animate.min.css";
+import styles from "./Information.module.css";
 
 export function Privacy() {
     return (
         <>
-            <section className="main-top">
-                <Header />
+            <section className={styles["information-top"]}>
+            <Header/>
                 <div
-                    className="main-top-content"
+                    className={styles["information-top-content"]}
                     style={{ textAlign: "start" }}
                 >
                     <h1>Privacy Policy</h1>

@@ -1,42 +1,79 @@
 import React, { useState, useEffect } from "react";
 import { Icon } from "@iconify/react";
 
-import "../App.css";
+import styles from "../App.module.css";
+
+import { useNavigate } from "react-router-dom";
 
 export function Menu() {
+    const navigate = useNavigate();
+
     const [homeSelected, setHomeSelected] = useState(false);
     const [mapSelected, setMapSelected] = useState(false);
     const [timeSelected, setTimeSelected] = useState(false);
 
     useEffect(() => {
-        if (window.location.pathname === '/app/home') {
+        if (window.location.pathname === "/app/home") {
             setHomeSelected(true);
-        } else if (window.location.pathname === '/app/map') {
+        } else if (window.location.pathname === "/app/map") {
             setMapSelected(true);
-        } else if (window.location.pathname === '/app/timetable') {
+        } else if (window.location.pathname === "/app/timetable") {
             setTimeSelected(true);
         }
     }, []);
 
     return (
-        <div className="app-box menu">
-            <div className={"menu-item " + (homeSelected ? "selected" : "")}>
-                <a href="./home">
-                    <Icon id="menu-icon" icon="fa6-solid:house-chimney" />
+        <div className={`${styles["app-box"]} ${styles["menu"]}`}>
+            <div
+                className={`${styles["menu-item"]} ${
+                    homeSelected ? styles["selected"] : ""
+                }`}
+                onClick={() => {
+                    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+                    navigate("/app/home");
+                }}
+            >
+                <p>
+                    <Icon
+                        className={styles["menu-icon"]}
+                        icon="fa6-solid:house-chimney"
+                    />
                     Home
-                </a>
+                </p>
             </div>
-            <div className={"menu-item " + (mapSelected ? "selected" : "")}>
-                <a href="./map">
-                    <Icon id="menu-icon" icon="fa6-solid:map" />
+            <div
+                className={`${styles["menu-item"]} ${
+                    mapSelected ? styles["selected"] : ""
+                }`}
+                onClick={() => {
+                    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+                    navigate("/app/map");
+                }}
+            >
+                <p>
+                    <Icon
+                        className={styles["menu-icon"]}
+                        icon="fa6-solid:map"
+                    />
                     Map
-                </a>
+                </p>
             </div>
-            <div className={"menu-item " + (timeSelected ? "selected" : "")}>
-                <a href="./timetable">
-                    <Icon id="menu-icon" icon="fa6-solid:calendar-days" />
+            <div
+                className={`${styles["menu-item"]} ${
+                    timeSelected ? styles["selected"] : ""
+                }`}
+                onClick={() => {
+                    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+                    navigate("/app/timetable");
+                }}
+            >
+                <p>
+                    <Icon
+                        className={styles["menu-icon"]}
+                        icon="fa6-solid:calendar-days"
+                    />
                     Timetable
-                </a>
+                </p>
             </div>
         </div>
     );

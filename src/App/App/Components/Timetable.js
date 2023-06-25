@@ -1,7 +1,7 @@
 import React from "react";
 
-import "../App.css";
+import styles from "../App.module.css";
 
 export function TimeTable() {
-    return <div className="app-box timetable"></div>;
+    return <div className={styles["app-box"] + " " + styles["timetable"]}></div>;
 }

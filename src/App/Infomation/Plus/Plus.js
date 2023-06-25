@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import "./Navigate+.css";
+import styles from "./Plus.module.css";
 
 import { Header } from "../../Home/Components/Header";
 import { Footer } from "../../Home/Components/Footer";
@@ -8,31 +8,31 @@ import { Footer } from "../../Home/Components/Footer";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css/animate.min.css";
 
-export function NavigatorPlus() {
+export function Plus() {
     return (
         <>
-            <section className="main-top">
+            <section className={styles["plus-top"]}>
                 <Header />
-                <div className="main-top-content">
+                <div className={styles["plus-top-content"]}>
                     <h1>Navigator +</h1>
                     <h3>
                         CampusRoute but{" "}
-                        <span className="emphasis">
+                        <span className={styles.emphasis}>
                             better
                         </span>
                     </h3>
-                    <ul className="main-top-content-plan-list">
-                        <li className="main-top-content-plan-list-item"></li>
+                    <ul className={styles["plus-top-content-plan-list"]}>
+                        <li className={styles["plus-top-content-plan-list-item"]}></li>
                     </ul>
-                    <div className="main-top-content-plans">
-                        <div className="main-top-content-plan">
-                            <h2 className="main-top-content-plan-header">
+                    <div className={styles["plus-top-content-plans"]}>
+                        <div className={styles["plus-top-content-plan"]}>
+                            <h2 className={styles["plus-top-content-plan-header"]}>
                                 Subscription
                             </h2>
 
-                            <h4 className="main-top-content-plan-price">
+                            <h4 className={styles["plus-top-content-plan-price"]}>
                                 <span
-                                    className="main-top-content-plan-price-int"
+                                    className={styles["plus-top-content-plan-price-int"]}
                                     style={{
                                         backgroundImage:
                                             "linear-gradient(0deg,var(--red-50),var(--yellow-50))",
@@ -43,20 +43,20 @@ export function NavigatorPlus() {
                                 / month
                             </h4>
 
-                            <button className="main-top-content-plan-button">
-                                <span className="main-top-content-plan-button-text">
+                            <button className={styles["plus-top-content-plan-button"]}>
+                                <span className={styles["plus-top-content-plan-button-text"]}>
                                     Soon™
                                 </span>
                             </button>
                         </div>
-                        <div className="main-top-content-plan">
-                            <h2 className="main-top-content-plan-header">
+                        <div className={styles["plus-top-content-plan"]}>
+                            <h2 className={styles["plus-top-content-plan-header"]}>
                                 Lifetime
                             </h2>
 
-                            <h4 className="main-top-content-plan-price">
+                            <h4 className={styles["plus-top-content-plan-price"]}>
                                 <span
-                                    className="main-top-content-plan-price-int"
+                                    className={styles["plus-top-content-plan-price-int"]}
                                     style={{
                                         backgroundImage:
                                             "linear-gradient(0deg,var(--purple-50),var(--blue-50))",
@@ -67,8 +67,8 @@ export function NavigatorPlus() {
                                 once
                             </h4>
 
-                            <button className="main-top-content-plan-button">
-                                <span className="main-top-content-plan-button-text">
+                            <button className={styles["plus-top-content-plan-button"]}>
+                                <span className={styles["plus-top-content-plan-button-text"]}>
                                     Soon™
                                 </span>
                             </button>

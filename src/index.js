@@ -5,7 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Home } from "./App/Home/Home";
 import { TermsOfService } from "./App/Infomation/tos";
 import { Privacy } from "./App/Infomation/Privacy";
-import { NavigatorPlus } from "./App/Infomation/Navigator+/Navigator+";
+import { Plus } from "./App/Infomation/Plus/Plus";
 import { Status } from "./App/Infomation/Status"
 
 import { AppRedirect } from "./App/App/Redirect";
@@ -19,7 +19,6 @@ import { SignIn } from "./App/App/SignIn/SignIn";
 import { NotFound } from "./App/Home/404";
 import { Error } from "./error";
 
-import devlogONE from "./App/Infomation/Blog/devlog/one.md"
 
 const router = createBrowserRouter([
     {
@@ -38,12 +37,10 @@ const router = createBrowserRouter([
         path: "/status",
         element: <Status />,
     },
-    /*
     {
         path: "/plus",
-        element: <NavigatorPlus />,
+        element: <Plus />,
     },
-    */
     {
         path: "/app",
         element: <AppRedirect />,
