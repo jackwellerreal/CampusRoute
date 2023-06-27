@@ -73,6 +73,7 @@
 }
 
 body {
+    scroll-behavior: smooth;
     background: #121212;
     color: #fff;
 }
