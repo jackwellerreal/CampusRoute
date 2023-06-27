@@ -1,13 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-import styles from "../App.module.css";
+import styles from "./Signin.module.css";
 
-import { Header } from "../../Home/Components/Header";
-import { Footer } from "../../Home/Components/Footer";
+import { Header } from "../Home/Components/Header";
+import { Footer } from "../Home/Components/Footer";
 
-import { Menu } from "../Components/Menu";
-import { Map } from "../Components/Map";
+import { Signin } from "./Components/Signin";
 
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css/animate.min.css";
@@ -32,23 +31,26 @@ firebase.initializeApp({
 const auth = firebase.auth();
 const firestore = firebase.firestore();
 
-export function AppMap() {
+export function AppSignin() {
     const navigate = useNavigate();
     const [user] = useAuthState(auth);
 
-    return (
-        <>
-            <section className={styles["app-top"]}>
-                <Header />
-                <div
-                    className={styles["app-top-content"]}
-                    style={{ textAlign: "start" }}
-                >
-                    <Menu />
-                    <Map />
-                </div>
-            </section>
-            <Footer />
-        </>
-    );
+    if (!user) {
+        return (
+            <>
+                <section className={styles["signin-top"]}>
+                    <Header />
+                    <div
+                        className={styles["signin-top-content"]}
+                        style={{ textAlign: "start" }}
+                    >
+                        <Signin />
+                    </div>
+                </section>
+                <Footer />
+            </>
+        );
+    } else {
+        return navigate("/app/home");
+    }
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { Icon } from "@iconify/react";
 import { MapContainer, TileLayer, useMap, Marker, Popup } from "react-leaflet";
 
 import styles from "../App.module.css";

@@ -12,10 +12,11 @@ import { AppRedirect } from "./App/App/Redirect";
 import { AppHome } from "./App/App/Pages/Home";
 import { AppMap } from "./App/App/Pages/Map";
 import { AppTimetable } from "./App/App/Pages/Timetable";
+import { AppEdit } from "./App/App/Pages/Edit";
+import { AppSettings } from "./App/App/Pages/Settings";
 
-/*
-import { SignIn } from "./App/App/SignIn/SignIn";
-*/
+import { AppSignin } from "./App/App/Signin";
+
 import { NotFound } from "./App/Home/404";
 import { Error } from "./error";
 
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
         element: <Plus />,
     },
     {
+        path: "/signin",
+        element: <AppSignin />,
+    },
+    {
         path: "/app",
         element: <AppRedirect />,
     },
@@ -52,6 +57,14 @@ const router = createBrowserRouter([
     {
         path: "/app/map",
         element: <AppMap />,
+    },
+    {
+        path: "/app/edit",
+        element: <AppEdit />,
+    },
+    {
+        path: "/app/settings",
+        element: <AppSettings />,
     },
     {
         path: "/app/timetable",

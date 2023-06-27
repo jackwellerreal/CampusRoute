@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Email Template</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212;
+            padding: 20px;
+        }
+
+        .header {
+            height: 10vh;
+            z-index: 100;
+            display: flex;
+            justify-content: center;
+        }
+
+        .header-logo {
+            height: 100%;
+            cursor: pointer;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #2a2a2a;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.75);
+        }
+
+        * {
+            color: #ffffff;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 2em 0 1em;
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #0066FF;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+        }
+
+        .footer {
+            margin-top: 50px;
+            font-size: 0.75em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <header class="header"><img
+                src="https://www.campusroute.net/static/media/logoBig.81382213abec932f46a7ddf13834409e.svg"
+                class="header-logo" alt="Campus Route Logo">
+        </header>
+        <h1>Welcome to Our Newsletter!</h1>
+        <p>Thank you for subscribing to our newsletter. Stay up to date with the latest news and updates.</p>
+        <p>Don't miss out on exciting offers and exclusive content. Click the button below to get started.</p>
+        <a href="#" class="button">Subscribe</a>
+        <div class="footer">
+            <p>You are receiving this email because you subscribed to our newsletter. If you wish to unsubscribe, click
+                <a href="#">here</a>.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
