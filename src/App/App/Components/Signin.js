@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Icon } from "@iconify/react";
 
 import styles from "../Signin.module.css";
@@ -25,28 +25,39 @@ const firestore = firebase.firestore();
 
 export function Signin() {
     const [user] = useAuthState(auth);
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
 
     const usersCollection = firestore.collection("users");
 
-    const addUser = (e) => {
+    const addUser = () => {
         const userId = auth.currentUser.uid;
+        const userEmail = auth.currentUser.email;
+        const signInMethod = auth.currentUser.providerData[0]?.providerId;
 
-        usersCollection
-            .where("userID", "==", userId)
+        const userQuery = usersCollection.where("userID", "==", userId);
+        userQuery
             .get()
             .then((querySnapshot) => {
                 if (querySnapshot.empty) {
                     usersCollection
-                        .add({
+                        .doc(userId)
+                        .set({
                             userNAME: auth.currentUser.displayName,
                             userID: userId,
-                            authorPFP: auth.currentUser.photoURL,
+                            userEMAIL: userEmail,
+                            signInMethod: signInMethod,
+                            userPFP: auth.currentUser.photoURL,
                             userCREATED:
                                 firebase.firestore.FieldValue.serverTimestamp(),
                         })
                         .then(() => {
                             console.log("User account created & signed in!");
+                        })
+                        .catch((error) => {
+                            console.log("Error creating user account:", error);
                         });
+                } else {
                     console.log("User account already exists!");
                 }
             })
@@ -71,6 +82,7 @@ export function Signin() {
     return (
         <div className={styles["signin-box"]}>
             <h1>Sign In</h1>
+
             <button
                 onClick={signInWithGoogle}
                 className={styles["googleButton"]}

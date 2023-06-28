@@ -42,7 +42,7 @@ export function AppSettings() {
                 <section className={styles["app-top"]}>
                     <Header />
                     <div
-                        className={styles["app-top-content"]}
+                        className={styles["app-top-content"]}  
                         style={{ textAlign: "start" }}
                     >
                         <Menu />
