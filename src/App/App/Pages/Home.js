@@ -36,21 +36,25 @@ const firestore = firebase.firestore();
 export function AppHome() {
     const navigate = useNavigate();
     const [user] = useAuthState(auth);
-    
-    return (
-        <>
-            <section className={styles["app-top"]}>
-                <Header />
-                <div
-                    className={styles["app-top-content"]}
-                    style={{ textAlign: "start" }}
-                >
-                    <Menu />
-                    <Map />
-                    <TimeTable />
-                </div>
-            </section>
-            <Footer />
-        </>
-    );
+
+    if (user) {
+        return (
+            <>
+                <section className={styles["app-top"]}>
+                    <Header />
+                    <div
+                        className={styles["app-top-content"]}
+                        style={{ textAlign: "start" }}
+                    >
+                        <Menu />
+                        <Map />
+                        <TimeTable />
+                    </div>
+                </section>
+                <Footer />
+            </>
+        );
+    } else {
+        return navigate("/signin");
+    }
 }
