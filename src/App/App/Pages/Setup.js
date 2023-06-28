@@ -7,7 +7,7 @@ import { Header } from "../../Home/Components/Header";
 import { Footer } from "../../Home/Components/Footer";
 
 import { Menu } from "../Components/Menu";
-import { Edit } from "../Components/Edit";
+import { Setup } from "../Components/Setup";
 
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css/animate.min.css";
@@ -32,7 +32,7 @@ firebase.initializeApp({
 const auth = firebase.auth();
 const firestore = firebase.firestore();
 
-export function AppEdit() {
+export function AppSetup() {
     const navigate = useNavigate();
     const [user] = useAuthState(auth);
 
@@ -41,7 +41,13 @@ export function AppEdit() {
             <>
                 <section className={styles["app-top"]}>
                     <Header />
-                    <Edit/>
+                    <div
+                        className={styles["app-top-content"]}
+                        style={{ textAlign: "start" }}
+                    >
+                        <Menu />
+                        <Setup />
+                    </div>
                 </section>
                 <Footer />
             </>

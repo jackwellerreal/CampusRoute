@@ -10,6 +10,7 @@ import { Status } from "./App/Infomation/Status"
 
 import { AppRedirect } from "./App/App/Redirect";
 import { AppHome } from "./App/App/Pages/Home";
+import { AppSetup } from "./App/App/Pages/Setup";
 import { AppMap } from "./App/App/Pages/Map";
 import { AppTimetable } from "./App/App/Pages/Timetable";
 import { AppEdit } from "./App/App/Pages/Edit";
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
     {
         path: "/app/home",
         element: <AppHome />,
+    },,
+    {
+        path: "/app/setup",
+        element: <AppSetup />,
     },
     {
         path: "/app/map",

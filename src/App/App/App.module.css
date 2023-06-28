@@ -74,12 +74,17 @@
     margin-top: 1em;
 }
 
+.edit {
+    padding: 1em;
+}
+
 .settings {
+    overflow-y: scroll;
     padding: 1em;
 }
 
 .settings-edit {
-    margin-bottom: 3.5em;
+    margin-bottom: 2.5em;
 }
 
 .settings-edit-input input[type="text"],
