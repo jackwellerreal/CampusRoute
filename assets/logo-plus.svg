@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	y="0px" viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
+	<style type="text/css">
+		.st0 {
+			fill: #0066FF;
+		}
+
+		.st1 {
+			fill: #6198FF;
+		}
+
+		.st2 {
+			fill: #F5F8FA;
+		}
+
+		.st3 {
+			fill: #CCD6DD;
+		}
+
+		.st4 {
+			fill: #292F33;
+		}
+
+		.st5 {
+			fill: #DD2E44;
+		}
+
+		.st6 {
+			fill: #8899A6;
+		}
+
+		.st7 {
+			fill: #004CBB;
+		}
+	</style>
+	<circle class="st0" cx="18" cy="18" r="18" />
+	<circle class="st1" cx="18" cy="18" r="14.5" />
+	<circle class="st2" cx="18" cy="18" r="13" />
+	<path class="st3" d="M18,8l1.5,6.3l5.5-3.4l-3.4,5.5L28,18l-6.3,1.5l3.4,5.5l-5.5-3.4L18,28l-1.5-6.3L11,25.1l3.4-5.5L8,18l6.3-1.5
+	L10.9,11l5.5,3.4L18,8z" />
+	<path class="st4" d="M17.3,20.7l8.8,5.4l-5.4-8.8L17.3,20.7z" />
+	<path class="st5" d="M18.7,15.3L9.9,9.9l5.4,8.8L18.7,15.3z" />
+	<circle class="st6" cx="18" cy="18" r="3.1" />
+	<circle class="st2" cx="18" cy="18" r="1.6" />
+	<path class="st7" d="M28.2,26H27c-0.6,0-1-0.4-1-1v-5.4h3.2V25C29.2,25.6,28.8,26,28.2,26z" />
+	<rect x="26" y="16.4" class="st7" width="3.2" height="3.2" />
+	<path class="st7" d="M34.6,19.6h-5.4v-3.2h5.4c0.6,0,1,0.4,1,1v1.2C35.6,19.2,35.2,19.6,34.6,19.6z" />
+	<path class="st7" d="M26,19.6h-5.4c-0.6,0-1-0.4-1-1v-1.2c0-0.6,0.4-1,1-1H26V19.6z" />
+	<path class="st7" d="M29.2,16.4H26V11c0-0.6,0.4-1,1-1h1.2c0.6,0,1,0.4,1,1V16.4z" />
+	<rect x="26" y="14.9" class="st7" width="3.2" height="3.2" />
+	<rect x="27.6" y="16.4" class="st7" width="3.2" height="3.2" />
+	<rect x="24.4" y="16.4" class="st7" width="3.2" height="3.2" />
+	<rect x="26" y="18.1" class="st7" width="3.2" height="3.2" />
+</svg>
