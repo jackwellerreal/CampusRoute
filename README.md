@@ -1,4 +1,4 @@
-![Campus Route](https://github.com/CampusRoute/CampusRoute/blob/main/assets/logo-big-highres.png)
+[![Campus Route](https://github.com/CampusRoute/CampusRoute/blob/main/assets/logo-big-highres.png)](https://campusroute.net/)
 <br><br><br>
 [![Made in Australia](https://img.shields.io/badge/Made_In-Australia-00843D?labelColor=FFCD00&style=for-the-badge)](https://www.madeinaustralia.com.au/)
 
