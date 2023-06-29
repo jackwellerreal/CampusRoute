@@ -7,7 +7,7 @@ import { Header } from "../../Home/Components/Header";
 import { Footer } from "../../Home/Components/Footer";
 
 import { Menu } from "../Components/Menu";
-import { Setup } from "../Components/Setup";
+import { Setup } from "../Components/Setup.js";
 
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css/animate.min.css";
@@ -42,11 +42,10 @@ export function AppSetup() {
                 <section className={styles["app-top"]}>
                     <Header />
                     <div
-                        className={styles["app-top-content"]}
+                        className={styles["setup-top-content"]}
                         style={{ textAlign: "start" }}
                     >
-                        <Menu />
-                        <Setup />
+                        <Setup/>
                     </div>
                 </section>
                 <Footer />
