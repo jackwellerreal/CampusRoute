@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Icon } from "@iconify/react";
+import { Notyf } from "notyf";
+import "notyf/notyf.min.css";
 
 import styles from "../App.module.css";
 
@@ -24,8 +26,17 @@ firebase.initializeApp({
 const auth = firebase.auth();
 const firestore = firebase.firestore();
 
+const notyf = new Notyf({
+    duration: 3000,
+    position: {
+        x: "right",
+        y: "top",
+    }
+});
+
 export function Settings() {
     const [user] = useAuthState(auth);
+    const userID = user.uid;
     const [newName, setNewName] = useState(user.displayName);
     const [newEmail, setNewEmail] = useState(user.email);
 
@@ -64,11 +75,20 @@ export function Settings() {
 
     const handleDeleteAccount = async () => {
         try {
-            await firestore.collection("users").doc(user.uid).delete();
-            await auth.currentUser.delete();
+            const tempData = await firestore.collection("users").doc(userID).data();
+            await firestore.collection("users").doc(userID).delete();
+            try {
+                await auth.currentUser.delete()
+            } catch (error) {
+                notyf.error(
+                    "To proceed, please sign in again and retry the operation."
+                );
+                console.error(error);
+                await firestore.collection("users").doc(userID).set(tempData);
+            }
             console.log("User account deleted successfully");
         } catch (error) {
-            console.error("Error deleting user account", error);
+            console.error(error);
         }
     };
 
@@ -92,7 +112,7 @@ export function Settings() {
 
             URL.revokeObjectURL(userDataURL);
         } catch (error) {
-            console.error("Error exporting user data", error);
+            console.error("Error exporting user data: ", error);
         }
     };
 
