@@ -48,8 +48,9 @@ export function Signin() {
                             userEMAIL: userEmail,
                             signInMethod: signInMethod,
                             userPFP: auth.currentUser.photoURL,
+                            userSCHOOL: null,
                             userCREATED: firebase.firestore.FieldValue.serverTimestamp(),
-                            finishedSetup: false
+                            finishedSetup: false,
                         })
                         .then(() => {
                             console.log("User account created & signed in!");

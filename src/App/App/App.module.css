@@ -92,6 +92,7 @@
     display: block;
     width: 75%;
     padding: 0.75em;
+    background-color: #3b3b3b;
     border: none;
     outline: none;
     margin-bottom: 1em;
@@ -103,7 +104,7 @@
 
 .settings-edit-input input[type="text"]:focus,
 .settings-edit-input input[type="email"]:focus {
-    background-color: #353535;
+    background-color: #363636;
 }
 
 .settings-button.save {
