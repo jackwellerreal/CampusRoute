@@ -17,22 +17,44 @@ export function Plus() {
                     <h1>Navigator +</h1>
                     <h3>
                         CampusRoute but{" "}
-                        <span className={styles.emphasis}>
-                            better
-                        </span>
+                        <span className={styles.emphasis}>better</span>
                     </h3>
                     <ul className={styles["plus-top-content-plan-list"]}>
-                        <li className={styles["plus-top-content-plan-list-item"]}></li>
+                        <li
+                            className={
+                                styles["plus-top-content-plan-list-item"]
+                            }
+                        ></li>
                     </ul>
                     <div className={styles["plus-top-content-plans"]}>
+                        <h2
+                            className={styles["plus-top-content-plan-header"]}
+                            style={{ gridColumn: "1 / span 2" }}
+                        >
+                            Subscription
+                        </h2>
+                        <h2 className={styles["plus-top-content-plan-header"]}>
+                            Lifetime
+                        </h2>
                         <div className={styles["plus-top-content-plan"]}>
-                            <h2 className={styles["plus-top-content-plan-header"]}>
-                                Subscription
-                            </h2>
-
-                            <h4 className={styles["plus-top-content-plan-price"]}>
+                            <h3
+                                className={
+                                    styles["plus-top-content-plan-header"]
+                                }
+                            >
+                                Monthly
+                            </h3>
+                            <h4
+                                className={
+                                    styles["plus-top-content-plan-price"]
+                                }
+                            >
                                 <span
-                                    className={styles["plus-top-content-plan-price-int"]}
+                                    className={
+                                        styles[
+                                            "plus-top-content-plan-price-int"
+                                        ]
+                                    }
                                     style={{
                                         backgroundImage:
                                             "linear-gradient(0deg,var(--red-50),var(--yellow-50))",
@@ -43,20 +65,86 @@ export function Plus() {
                                 / month
                             </h4>
 
-                            <button className={styles["plus-top-content-plan-button"]}>
-                                <span className={styles["plus-top-content-plan-button-text"]}>
+                            <button
+                                className={
+                                    styles["plus-top-content-plan-button"]
+                                }
+                            >
+                                <span
+                                    className={
+                                        styles[
+                                            "plus-top-content-plan-button-text"
+                                        ]
+                                    }
+                                >
                                     Soon™
                                 </span>
                             </button>
                         </div>
                         <div className={styles["plus-top-content-plan"]}>
-                            <h2 className={styles["plus-top-content-plan-header"]}>
-                                Lifetime
-                            </h2>
-
-                            <h4 className={styles["plus-top-content-plan-price"]}>
+                            <h3
+                                className={
+                                    styles["plus-top-content-plan-header"]
+                                }
+                            >
+                                Annually
+                            </h3>
+                            <h4
+                                className={
+                                    styles["plus-top-content-plan-price"]
+                                }
+                            >
                                 <span
-                                    className={styles["plus-top-content-plan-price-int"]}
+                                    className={
+                                        styles[
+                                            "plus-top-content-plan-price-int"
+                                        ]
+                                    }
+                                    style={{
+                                        backgroundImage:
+                                            "linear-gradient(0deg,var(--green-50),var(--blue-50))",
+                                    }}
+                                >
+                                    34.99
+                                </span>{" "}
+                                / year
+                            </h4>
+
+                            <button
+                                className={
+                                    styles["plus-top-content-plan-button"]
+                                }
+                            >
+                                <span
+                                    className={
+                                        styles[
+                                            "plus-top-content-plan-button-text"
+                                        ]
+                                    }
+                                >
+                                    Soon™
+                                </span>
+                            </button>
+                        </div>
+                        <div className={styles["plus-top-content-plan"]}>
+                            <h3
+                                className={
+                                    styles["plus-top-content-plan-header"]
+                                }
+                            >
+                                One Time
+                            </h3>
+                            <h4
+                                className={
+                                    styles["plus-top-content-plan-price"]
+                                }
+                            >
+                                <span
+                                    className={
+                                        styles[
+                                            "plus-top-content-plan-price-int"
+                                        ]
+                                    }
                                     style={{
                                         backgroundImage:
                                             "linear-gradient(0deg,var(--purple-50),var(--blue-50))",
@@ -67,8 +155,18 @@ export function Plus() {
                                 once
                             </h4>
 
-                            <button className={styles["plus-top-content-plan-button"]}>
-                                <span className={styles["plus-top-content-plan-button-text"]}>
+                            <button
+                                className={
+                                    styles["plus-top-content-plan-button"]
+                                }
+                            >
+                                <span
+                                    className={
+                                        styles[
+                                            "plus-top-content-plan-button-text"
+                                        ]
+                                    }
+                                >
                                     Soon™
                                 </span>
                             </button>
