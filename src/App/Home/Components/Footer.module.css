@@ -6,34 +6,8 @@
     background: #1f1f1f;
 }
 
-.footer-logo-container {
-    display: grid;
-    grid-template-rows: 2fr 1fr;
-}
-
 .footer-logo {
     cursor: pointer;
-}
-
-.footer-social ul {
-    display: flex;
-    list-style-type: none;
-    margin-top: 16px;
-}
-
-.footer-social li {
-    margin-right: 24px;
-    width: fit-content;
-}
-
-.footer-social a>svg {
-    display: block;
-    height: 40px;
-}
-
-.footer-social a>svg {
-    fill: #fff;
-    transition: 0.5s ease;
 }
 
 .footer-container {
@@ -55,7 +29,7 @@
 
 .footer-item-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .footer-item h1 {
@@ -79,8 +53,28 @@
     display: inline-block !important;
     height: 16px !important;
     margin-bottom: 0px !important;
-    vertical-align: -0.125em;
+    vertical-align: -0.125em
+}
+
+.footer-item a>svg {
+    display: block;
+    height: 48px;
+    margin-bottom: 8px;
+}
+
+.footer-item a>svg {
     fill: #fff;
+    transition: 1s ease;
+}
+
+.footer-item-icon.github:hover {
+    filter: drop-shadow(0px 0px 7.5px var(--brand-1));
+    fill: var(--brand-1)
+}
+
+.footer-item-icon.mail:hover {
+    filter: drop-shadow(0px 0px 7.5px var(--brand-1));
+    fill: var(--brand-1)
 }
 
 .footer-acknowledgement {
