@@ -100,7 +100,8 @@ export function Footer() {
                             </div>
                             <div className={styles["footer-item"]}>
                                 <h1>Company</h1>
-                                <ul>{/*
+                                <ul>
+                                    {/*
                                     <li>
                                         <a href="../about">About Us</a>
                                     </li>*/}
@@ -162,7 +163,13 @@ export function Footer() {
                                 <a href="../privacy">Privacy Policy</a>
                             </li>
                             <li>
-                                <p>© 2023 Campus Route. All rights reserved.</p>
+                                <a
+                                    href="https://github.com/what-question-mark"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    © 2023 whatqm . All rights reserved.
+                                </a>
                             </li>
                         </ul>
                     </div>

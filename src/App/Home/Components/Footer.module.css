@@ -92,6 +92,10 @@
     margin: 0 1em;
 }
 
+.footer-legal-content a {
+    text-decoration: none;
+}
+
 .footer-gradient {
     height: 0.5em;
     background-size: 200%;
