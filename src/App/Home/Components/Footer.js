@@ -50,7 +50,7 @@ export function Footer() {
                                     </li>
                                     <li>
                                         <a
-                                            href="https://twitter.com/campus_route"
+                                            href="https://twitter.com/campusroute_au"
                                             target="_blank"
                                             rel="noreferrer"
                                         >
