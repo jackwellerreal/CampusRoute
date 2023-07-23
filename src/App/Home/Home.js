@@ -47,7 +47,7 @@ export function Home() {
             </section>
             <section className={styles["home-info"]}>
                 <h1>
-                    Streamline Your Education Experience with These Features
+                    Here are some features
                 </h1>
                 <AnimationOnScroll
                     animateIn="animate__fadeIn"

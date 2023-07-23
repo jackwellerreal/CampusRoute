@@ -34,7 +34,7 @@ const router = createBrowserRouter([
     {
         path: "/privacy",
         element: <Privacy />,
-    },,
+    },
     {
         path: "/status",
         element: <Status />,

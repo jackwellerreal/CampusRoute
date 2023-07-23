@@ -1,7 +1,14 @@
 .information-top {
     width: 100%;
+    min-height: 100vh;
+}
+
+.information-background {
+    position:absolute;
+    z-index: -1;
+    width: 100%;
     height: 100vh;
-    background: url("../../Assets/bg.svg");
+    background: url("../../Assets/bgBottom.svg");
     background-size: cover;
     background-position: center;
 }
@@ -9,23 +16,39 @@
 .information-top-content {
     margin: 0 10%;
     padding-top: 15vh;
+    padding-bottom: 5vh;
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
 .information-top-content h1 {
-    -webkit-text-fill-color: transparent;
-    background: linear-gradient(180deg,var(--brand-1),var(--brand-2),var(--brand-3),var(--brand-4),var(--brand-5));
-    -webkit-background-clip: text;
-    background-clip: text;
-    font-size: 6rem;
+    color: var(--brand-0);
+    font-size: 4rem;
     font-weight: 600;
-    margin-bottom: 0;
+    margin-bottom: 1rem;
 }
 
 .information-top-content p {
     font-size: 2rem;
     font-weight: 400;
-    margin-bottom: 2rem;
+}
+
+.information-top-content h2 {
+    color: var(--brand-0);
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.information-top-content a {
+    display: block;
+    background-color: #3b3b3b;
+    width: fit-content;
+    padding: 0.5em;
+    border: none;
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: 1.5rem;
+    cursor: pointer;
 }

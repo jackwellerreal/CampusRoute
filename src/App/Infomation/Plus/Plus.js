@@ -12,6 +12,7 @@ export function Plus() {
     return (
         <>
             <section className={styles["plus-top"]}>
+                <div className={styles["plus-background"]}></div>
                 <Header />
                 <div className={styles["plus-top-content"]}>
                     <h1>Navigator +</h1>

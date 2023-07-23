@@ -2,7 +2,7 @@
 
 .footer {
     width: 100%;
-    padding: 1% 15%;
+    padding: 1% 15% 0;
     background: #1f1f1f;
 }
 
@@ -29,7 +29,7 @@
 
 .footer-item-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .footer-item h1 {
@@ -43,38 +43,53 @@
 
 .footer-item li {
     display: block;
-}
-
-.footer-item.social > ul {
-    float: right;
+    margin-right: 1rem;
 }
 
 .newtab {
     display: inline-block !important;
     height: 16px !important;
     margin-bottom: 0px !important;
-    vertical-align: -0.125em
+    vertical-align: -0.125em;
+    margin-right: 8px !important;
+}
+
+.footer-item.social > ul {
+    display: flex;
+    margin-top: 1em;
 }
 
 .footer-item a>svg {
     display: block;
-    height: 48px;
-    margin-bottom: 8px;
-}
-
-.footer-item a>svg {
+    height: 32px;
     fill: #fff;
     transition: 1s ease;
 }
 
 .footer-acknowledgement {
-    padding: 2em 0 0.5em 0;
+    padding: 2em 0;
     border-top: 2px solid #f5f6f7;
 }
 
 .footer-acknowledgement-content {
     font-size: 16px;
     font-weight: 500;
+}
+
+.footer-legal {
+    padding: 2em 0;
+    border-top: 2px solid #f5f6f7;
+}
+
+.footer-legal-content {
+    display: flex;
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.footer-legal-content li {
+    margin: 0 1em;
 }
 
 .footer-gradient {

@@ -7,13 +7,14 @@ export function Privacy() {
     return (
         <>
             <section className={styles["information-top"]}>
-            <Header/>
+                <div className={styles["information-background"]}></div>
+                <Header />
                 <div
                     className={styles["information-top-content"]}
                     style={{ textAlign: "start" }}
                 >
                     <h1>Privacy Policy</h1>
-                    <p style={{ height: "60vh", overflowY: "scroll" }}>
+                    <p>
                         <pre>
                             <strong>
                                 Privacy Policy for CampusRoute (based on
@@ -113,8 +114,8 @@ export function Privacy() {
                             rights to access, correct, or delete your personal
                             {"\n"}
                             information, please contact us at{" "}
-                            <a href="mailto:campusroute.au@gmail.com?subject=Privacy%20Policy%20Concerns">
-                                campusroute.au@gmail.com
+                            <a href="mailto:contact@campusroute.net?subject=Privacy%20Policy%20Concerns">
+                                contact@campusroute.net
                             </a>
                             .
                         </pre>

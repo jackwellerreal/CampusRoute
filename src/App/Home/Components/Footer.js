@@ -29,59 +29,6 @@ export function Footer() {
                                     navigate("/");
                                 }}
                             />
-                        </div>
-                        <div className={styles["footer-item-container"]}>
-                            <div className={styles["footer-item"]}>
-                                <h1>Product</h1>
-                                <ul>
-                                    <li>
-                                        <a href="../app">App</a>
-                                    </li>
-                                    {/*
-                            <li>
-                                <a href="../plus">NavigatorPlus</a>
-                            </li>
-                            */}
-                                    <li>
-                                        <a href="https://stats.uptimerobot.com/2rX63cVqwO">
-                                            Status
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className={styles["footer-item"]}>
-                                <h1>Legal</h1>
-                                <ul>
-                                    <li>
-                                        <a href="../tos">Terms of Service</a>
-                                    </li>
-                                    <li>
-                                        <a href="../privacy">Privacy Policy</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className={styles["footer-item"]}>
-                                <h1>Made by:</h1>
-                                <ul>
-                                    <li>
-                                        <a
-                                            href="https://github.com/what-question-mark"
-                                            target="_blank"
-                                            rel="noreferrer"
-                                        >
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                className={`${styles["footer-item-icon"]} ${styles["newtab"]}`}
-                                                viewBox="0 0 512 512"
-                                            >
-                                                {/*Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc.*/}
-                                                <path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z" />
-                                            </svg>{" "}
-                                            whatqm
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
                             <div
                                 className={`${styles["footer-item"]} ${styles["social"]}`}
                             >
@@ -118,7 +65,7 @@ export function Footer() {
                                     </li>
                                     <li>
                                         <a
-                                            href="mailto:support@campusroute.net	"
+                                            href="mailto:contact@campusroute.net"
                                             target="_blank"
                                             rel="noreferrer"
                                         >
@@ -134,6 +81,67 @@ export function Footer() {
                                 </ul>
                             </div>
                         </div>
+                        <div className={styles["footer-item-container"]}>
+                            <div className={styles["footer-item"]}>
+                                <h1>Product</h1>
+                                <ul>
+                                    <li>
+                                        <a href="../app">App</a>
+                                    </li>
+                                    <li>
+                                        <a href="../plus">Plus</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://stats.uptimerobot.com/2rX63cVqwO">
+                                            Status
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className={styles["footer-item"]}>
+                                <h1>Company</h1>
+                                <ul>{/*
+                                    <li>
+                                        <a href="../about">About Us</a>
+                                    </li>*/}
+                                    <li>
+                                        <a
+                                            href="https://drive.proton.me/urls/PW17KC2XNR#J3hFBaJJQWpi"
+                                            target="_blank"
+                                        >
+                                            Media Kit
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:contact@campusroute.net">
+                                            Contact
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className={styles["footer-item"]}>
+                                <h1>Made by:</h1>
+                                <ul>
+                                    <li>
+                                        <a
+                                            href="https://github.com/what-question-mark"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                className={`${styles["footer-item-icon"]} ${styles["newtab"]}`}
+                                                viewBox="0 0 512 512"
+                                            >
+                                                {/*Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc.*/}
+                                                <path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z" />
+                                            </svg>{" "}
+                                            whatqm
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                     <div className={styles["footer-acknowledgement"]}>
                         <p className={styles["footer-acknowledgement-content"]}>
@@ -144,6 +152,19 @@ export function Footer() {
                             Torres Strait Islander Elders of all communities who
                             also work and live on this land.
                         </p>
+                    </div>
+                    <div className={styles["footer-legal"]}>
+                        <ul className={styles["footer-legal-content"]}>
+                            <li>
+                                <a href="../tos">Terms of Service</a>
+                            </li>
+                            <li>
+                                <a href="../privacy">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <p>© 2023 Campus Route. All rights reserved.</p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </footer>
