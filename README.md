@@ -1,6 +1,6 @@
-[![Campus Route](https://github.com/CampusRoute/CampusRoute/blob/main/assets/logo-big-highres.png)](https://campusroute.net/)
+[![Campus Route](https://campusroute.net/assets/logo-big-highres.png)](https://campusroute.net/)
 <br><br><br>
-[![Made in Australia](https://img.shields.io/badge/Made_In-Australia-00843D?labelColor=FFCD00&style=for-the-badge)](https://www.madeinaustralia.com.au/)
+![Made in Australia](https://img.shields.io/badge/Made_In-Australia-00843D?labelColor=FFCD00&style=for-the-badge)
 
 CampusRoute is a navigation app for university students, offering real-time directions to classes, homework reminders, and class transition notifications for a seamless campus experience.
 
@@ -11,8 +11,8 @@ CampusRoute is a navigation app for university students, offering real-time dire
 
 
 ## Contributing 🤝
-Contributions are always welcome!
-See `contributing.md` for ways to get started. Please adhere to this project's `code of conduct`.
+Contributions are always welcome
+See `.github\CONTRIBUTING.md` for ways to get started. Please adhere to this project's `.github\CODE_OF_CONDUCT.md`.
 
 
 ## Thats all for now! 🎉
