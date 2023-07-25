@@ -86,10 +86,10 @@ export function Footer() {
                                 <h1>Product</h1>
                                 <ul>
                                     <li>
-                                        <a href="../app">App</a>
+                                        <a href="../../../app">App</a>
                                     </li>
                                     <li>
-                                        <a href="../plus">Plus</a>
+                                        <a href="../../../plus">Plus</a>
                                     </li>
                                     <li>
                                         <a href="https://stats.uptimerobot.com/2rX63cVqwO">
@@ -116,6 +116,11 @@ export function Footer() {
                                     <li>
                                         <a href="mailto:contact@campusroute.net">
                                             Contact
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../../../blog">
+                                            Blog
                                         </a>
                                     </li>
                                 </ul>

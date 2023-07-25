@@ -7,7 +7,7 @@ export function TermsOfService() {
     return (
         <>
             <section className={styles["information-top"]}>
-                <div className={styles["information-background"]}></div>
+                <div className={styles["information-background-top"]}></div>
                 <Header />
                 <div
                     className={styles["information-top-content"]}
@@ -140,6 +140,7 @@ export function TermsOfService() {
                         </pre>
                     </p>
                 </div>
+                <div className={styles["information-background-bottom"]}></div>
             </section>
             <Footer />
         </>

@@ -7,7 +7,7 @@ export function Privacy() {
     return (
         <>
             <section className={styles["information-top"]}>
-                <div className={styles["information-background"]}></div>
+                <div className={styles["information-background-top"]}></div>
                 <Header />
                 <div
                     className={styles["information-top-content"]}
@@ -121,6 +121,7 @@ export function Privacy() {
                         </pre>
                     </p>
                 </div>
+                <div className={styles["information-background-bottom"]}></div>
             </section>
             <Footer />
         </>

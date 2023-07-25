@@ -74,6 +74,8 @@
 .footer-acknowledgement-content {
     font-size: 16px;
     font-weight: 500;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .footer-legal {

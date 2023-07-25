@@ -7,6 +7,9 @@ import { TermsOfService } from "./App/Infomation/tos";
 import { Privacy } from "./App/Infomation/Privacy";
 import { Plus } from "./App/Infomation/Plus/Plus";
 import { Status } from "./App/Infomation/Status"
+import { Blog, BlogItem } from "./App/Infomation/Blog/Blog";
+
+import BlogItemDevlogOne from "./App/Infomation/Blog/Items/Devlog/One.md"
 
 import { AppRedirect } from "./App/App/Redirect";
 import { AppHome } from "./App/App/Pages/Home";
@@ -36,12 +39,20 @@ const router = createBrowserRouter([
         element: <Privacy />,
     },
     {
+        path: "/plus",
+        element: <Plus />,
+    },
+    {
         path: "/status",
         element: <Status />,
     },
     {
-        path: "/plus",
-        element: <Plus />,
+        path: "/blog",
+        element: <Blog />
+    },
+    {
+        path: "/blog/devlog/one",
+        element: <BlogItem file={BlogItemDevlogOne} />  
     },
     {
         path: "/signin",
