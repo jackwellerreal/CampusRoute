@@ -3,13 +3,14 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import { Home } from "./App/Home/Home";
-import { TermsOfService } from "./App/Infomation/tos";
-import { Privacy } from "./App/Infomation/Privacy";
+import { TermsOfService } from "./App/Infomation/Legal/tos";
+import { Privacy } from "./App/Infomation/Legal/Privacy";
 import { Plus } from "./App/Infomation/Plus/Plus";
 import { Status } from "./App/Infomation/Status"
 import { Blog, BlogItem } from "./App/Infomation/Blog/Blog";
 
-import BlogItemDevlogOne from "./App/Infomation/Blog/Items/Devlog/One.md"
+import BlogDevlogOne from "./App/Infomation/Blog/Items/Devlog/One.md"
+import InformationSocialGuidelines from "./App/Infomation/Social/Guidelines.md"
 
 import { AppRedirect } from "./App/App/Redirect";
 import { AppHome } from "./App/App/Pages/Home";
@@ -52,7 +53,11 @@ const router = createBrowserRouter([
     },
     {
         path: "/blog/devlog/one",
-        element: <BlogItem file={BlogItemDevlogOne} />  
+        element: <BlogItem file={BlogDevlogOne} />  
+    },
+    {
+        path: "/information/social/guidelines",
+        element: <BlogItem file={InformationSocialGuidelines} />  
     },
     {
         path: "/signin",

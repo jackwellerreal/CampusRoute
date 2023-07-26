@@ -1,7 +1,7 @@
 import React from "react";
-import { Header } from "../Home/Components/Header";
-import { Footer } from "../Home/Components/Footer";
-import styles from "./Information.module.css";
+import { Header } from "../../../Home/Components/Header";
+import { Footer } from "../../../Home/Components/Footer";
+import styles from "../Information.module.css";
 
 export function Privacy() {
     return (
