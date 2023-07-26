@@ -106,6 +106,11 @@ export function Footer() {
                                         <a href="../about">About Us</a>
                                     </li>*/}
                                     <li>
+                                    <li>
+                                        <a href="../../../blog">
+                                            Blog
+                                        </a>
+                                    </li>
                                         <a
                                             href="https://drive.proton.me/urls/PW17KC2XNR#J3hFBaJJQWpi"
                                             target="_blank"
@@ -116,11 +121,6 @@ export function Footer() {
                                     <li>
                                         <a href="mailto:contact@campusroute.net">
                                             Contact
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="../../../blog">
-                                            Blog
                                         </a>
                                     </li>
                                 </ul>
