@@ -2,7 +2,7 @@
 <img alt="Campus Route Logo" src="https://campusroute.net/assets/Logo/PNG/CampusRoute-logo-highresolution.png" width="50%">
 </a>
 
-<br>
+<br><br>
 
 ![Made in Australia](https://img.shields.io/badge/Made_In-Australia-00843D?labelColor=FFCD00&style=for-the-badge)
 
