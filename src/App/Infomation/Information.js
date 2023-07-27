@@ -1,32 +1,32 @@
 import React, { useState, useEffect } from "react";
 
-import styles from "./Blog.module.css";
+import styles from "./Information.module.css";
 
-import { Header } from "../../Home/Components/Header";
-import { Footer } from "../../Home/Components/Footer";
+import { Header } from "../Home/Components/Header";
+import { Footer } from "../Home/Components/Footer";
 
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css/animate.min.css";
 import ReactMarkdown from "react-markdown";
 
-export function Blog() {
+export function Information() {
     return (
         <>
-            <section className={styles["blog-top"]}>
-                <div className={styles["blog-background-top"]}></div>
+            <section className={styles["information-top"]}>
+                <div className={styles["information-background-top"]}></div>
                 <Header />
-                <div className={styles["blog-top-content"]}>
-                    <h1 className={styles["blog-title"]}>Blog</h1>
+                <div className={styles["information-top-content"]}>
+                    <h1 className={styles["information-title"]}>Information</h1>
                     <div></div>
                 </div>
-                <div className={styles["blog-background-bottom"]}></div>
+                <div className={styles["information-background-bottom"]}></div>
             </section>
             <Footer />
         </>
     );
 }
 
-export function BlogItem(props) {
+export function InformationItem(props) {
     const [title, setTitle] = useState("");
     const [author, setAuthor] = useState("");
     const [content, setContent] = useState("");
@@ -52,13 +52,13 @@ export function BlogItem(props) {
 
     return (
         <>
-            <section className={styles["blog-top"]}>
-                <div className={styles["blog-background-top"]}></div>
+            <section className={styles["information-top"]}>
+                <div className={styles["information-background-top"]}></div>
                 <Header />
-                <div className={styles["blog-top-content"]}>
-                    <div className={styles["blog-markdown"]}>
-                        <h1 className={styles["blog-title"]}>{title}</h1>
-                        <h5 className={styles["blog-author"]}>
+                <div className={styles["information-top-content"]}>
+                    <div className={styles["information-markdown"]}>
+                        <h1 className={styles["information-title"]}>{title}</h1>
+                        <h5 className={styles["information-author"]}>
                             Written by: {author}
                         </h5>
                         <ReactMarkdown
@@ -78,7 +78,7 @@ export function BlogItem(props) {
                         </ReactMarkdown>
                     </div>
                 </div>
-                <div className={styles["blog-background-bottom"]}></div>
+                <div className={styles["information-background-bottom"]}></div>
             </section>
             <Footer />
         </>

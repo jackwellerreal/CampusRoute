@@ -3,13 +3,15 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import { Home } from "./App/Home/Home";
-import { TermsOfService } from "./App/Infomation/Legal/tos";
-import { Privacy } from "./App/Infomation/Legal/Privacy";
 import { Plus } from "./App/Infomation/Plus/Plus";
 import { Status } from "./App/Infomation/Status"
-import { Blog, BlogItem } from "./App/Infomation/Blog/Blog";
 
-import BlogDevlogOne from "./App/Infomation/Blog/Items/Devlog/One.md"
+import InformationTOS from "./App/Infomation/Legal/TOS.md";
+import InformationPrivacy from "./App/Infomation/Legal/Privacy.md";
+
+import { Information, InformationItem } from "./App/Infomation/Information"
+
+import InformationDevlogOne from "./App/Infomation/Devlog/One.md"
 import InformationSocialGuidelines from "./App/Infomation/Social/Guidelines.md"
 
 import { AppRedirect } from "./App/App/Redirect";
@@ -33,31 +35,31 @@ const router = createBrowserRouter([
     },
     {
         path: "/tos",
-        element: <TermsOfService />,
+        element: <InformationItem file={InformationTOS} />  
     },
     {
         path: "/privacy",
-        element: <Privacy />,
+        element: <InformationItem file={InformationPrivacy} />  
     },
     {
         path: "/plus",
         element: <Plus />,
     },
     {
-        path: "/status",
+        path: "/information",
+        element: <Information />  
+    },
+    {
+        path: "/information/status",
         element: <Status />,
     },
     {
-        path: "/blog",
-        element: <Blog />
-    },
-    {
-        path: "/blog/devlog/one",
-        element: <BlogItem file={BlogDevlogOne} />  
+        path: "/information/devlog/one",
+        element: <InformationItem file={InformationDevlogOne} />  
     },
     {
         path: "/information/social/guidelines",
-        element: <BlogItem file={InformationSocialGuidelines} />  
+        element: <InformationItem file={InformationSocialGuidelines} />  
     },
     {
         path: "/signin",

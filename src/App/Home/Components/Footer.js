@@ -106,8 +106,8 @@ export function Footer() {
                                         <a href="../about">About Us</a>
                                     </li>*/}
                                     <li>
-                                        <a href="../../../blog">
-                                            Blog
+                                        <a href="../../../information">
+                                            Information
                                         </a>
                                     </li>
                                     <li>
@@ -162,10 +162,10 @@ export function Footer() {
                     <div className={styles["footer-legal"]}>
                         <ul className={styles["footer-legal-content"]}>
                             <li>
-                                <a href="../tos">Terms of Service</a>
+                                <a href="../../../tos">Terms of Service</a>
                             </li>
                             <li>
-                                <a href="../privacy">Privacy Policy</a>
+                                <a href="../../../privacy">Privacy Policy</a>
                             </li>
                             <li>
                                 <a
