@@ -42,7 +42,7 @@ export function InformationItem(props) {
                     const extractedTitle = match[1].trim();
                     const extractedAuthor = match[2].trim();
                     setTitle(extractedTitle);
-                    setAuthor(extractedAuthor);
+                    setAuthor(`Written by: ${extractedAuthor}`);
                 }
                 const cleanedContent = data.replace(configRegex, "").trim();
                 setContent(cleanedContent);
@@ -58,9 +58,7 @@ export function InformationItem(props) {
                 <div className={styles["information-top-content"]}>
                     <div className={styles["information-markdown"]}>
                         <h1 className={styles["information-title"]}>{title}</h1>
-                        <h5 className={styles["information-author"]}>
-                            Written by: {author}
-                        </h5>
+                        <h5 className={styles["information-author"]}>{author}</h5>
                         <ReactMarkdown
                             allowedElements={[
                                 "h1",
