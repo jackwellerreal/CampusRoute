@@ -25,13 +25,12 @@ import { AppSettings } from "./App/App/Pages/Settings";
 import { AppSignin } from "./App/App/Signin";
 
 import { NotFound } from "./App/Home/404";
-import { Error } from "./error";
 
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <Home />,
+        element: <Home />
     },
     {
         path: "/tos",
@@ -51,7 +50,7 @@ const router = createBrowserRouter([
     },
     {
         path: "/information/status",
-        element: <Status />,
+        element: <Status />
     },
     {
         path: "/information/devlog/one",
@@ -63,39 +62,39 @@ const router = createBrowserRouter([
     },
     {
         path: "/signin",
-        element: <AppSignin />,
+        element: <AppSignin />
     },
     {
         path: "/app",
-        element: <AppRedirect />,
+        element: <AppRedirect />
     },
     {
         path: "/app/home",
-        element: <AppHome />,
-    },,
+        element: <AppHome />
+    },
     {
         path: "/app/setup",
-        element: <AppSetup />,
+        element: <AppSetup />
     },
     {
         path: "/app/map",
-        element: <AppMap />,
+        element: <AppMap />
     },
     {
         path: "/app/edit",
-        element: <AppEdit />,
+        element: <AppEdit />
     },
     {
         path: "/app/settings",
-        element: <AppSettings />,
+        element: <AppSettings />
     },
     {
         path: "/app/timetable",
-        element: <AppTimetable />,
+        element: <AppTimetable />
     },
     {
         path: "*",
-        element: <NotFound />,
+        element: <NotFound />
     },
 ]);
 
