@@ -92,7 +92,11 @@ export function Footer() {
                                         <a href="../../../plus">Plus</a>
                                     </li>
                                     <li>
-                                        <a href="https://stats.uptimerobot.com/2rX63cVqwO">
+                                        <a
+                                            href="https://stats.uptimerobot.com/2rX63cVqwO"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
                                             Status
                                         </a>
                                     </li>
@@ -113,7 +117,8 @@ export function Footer() {
                                     <li>
                                         <a
                                             href="https://drive.proton.me/urls/PW17KC2XNR#J3hFBaJJQWpi"
-                                            target="_blank"
+                                            target="_blank"                                            
+                                            rel="noreferrer"
                                         >
                                             Media Kit
                                         </a>

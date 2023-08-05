@@ -58,7 +58,9 @@ export function InformationItem(props) {
                 <div className={styles["information-top-content"]}>
                     <div className={styles["information-markdown"]}>
                         <h1 className={styles["information-title"]}>{title}</h1>
-                        <h5 className={styles["information-author"]}>{author}</h5>
+                        <h5 className={styles["information-author"]}>
+                            {author}
+                        </h5>
                         <ReactMarkdown
                             allowedElements={[
                                 "h1",
