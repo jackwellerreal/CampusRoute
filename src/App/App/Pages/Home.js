@@ -47,8 +47,8 @@ export function AppHome() {
                         style={{ textAlign: "start" }}
                     >
                         <Menu />
-                        <Map />
                         <TimeTable />
+                        <Map />
                     </div>
                 </section>
                 <Footer />
