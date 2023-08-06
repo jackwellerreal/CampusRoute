@@ -10,8 +10,6 @@ import "firebase/compat/firestore";
 import "firebase/compat/auth";
 
 import { useAuthState } from "react-firebase-hooks/auth";
-import { fetchSignInMethodsForEmail } from "firebase/auth";
-import { updateProfile, updateEmail } from "firebase/auth";
 
 firebase.initializeApp({
     apiKey: "AIzaSyAeeTvV_czzoX_qxVOgRMxrE1aNEo6SMgQ",
@@ -37,31 +35,6 @@ const notyf = new Notyf({
 export function Settings() {
     const [user] = useAuthState(auth);
     const userID = user.uid;
-    const [newName, setNewName] = useState(user.displayName);
-    const [newEmail, setNewEmail] = useState(user.email);
-
-    const handleSave = async () => {
-        try {
-            const docRef = firestore.collection("users").doc(user.uid);
-            await docRef.update({
-                userNAME: newName,
-                userEMAIL: newEmail,
-            });
-            console.log("User information updated successfully");
-
-            const currentUser = auth.currentUser;
-            if (newName !== currentUser.displayName) {
-                await updateProfile(currentUser, { displayName: newName });
-                console.log("User name updated successfully.");
-            }
-            if (newEmail !== currentUser.email) {
-                await updateEmail(currentUser, newEmail);
-                console.log("User email updated successfully.");
-            }
-        } catch (error) {
-            console.error("Error updating user information", error);
-        }
-    };
 
     const handleLogout = () => {
         auth.signOut()
@@ -120,30 +93,16 @@ export function Settings() {
         <div className={`${styles["app-box"]} ${styles["settings"]}`}>
             <h2>Account Settings</h2>
 
-            <div className={styles["settings-edit"]}>
-                <div className={styles["settings-edit-input"]}>
+            <div className={styles["settings-info"]}>
+                <div className={styles["settings-info-containter"]}>
                     <h4>Name:</h4>
-                    <input
-                        type="text"
-                        value={newName}
-                        onChange={(e) => setNewName(e.target.value)}
-                    />
+                    <p className={styles["settings-info-data"]}>{user.displayName}</p>
                 </div>
 
-                <div className={styles["settings-edit-input"]}>
+                <div className={styles["settings-info-containter"]}>
                     <h4>Email:</h4>
-                    <input
-                        type="email"
-                        value={newEmail}
-                        onChange={(e) => setNewEmail(e.target.value)}
-                    />
+                    <p className={styles["settings-info-data"]}>{user.email}</p>
                 </div>
-                <button
-                    className={`${styles["settings-button"]} ${styles["save"]}`}
-                    onClick={handleSave}
-                >
-                    Update
-                </button>
             </div>
 
             <button
