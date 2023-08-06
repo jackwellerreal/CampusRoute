@@ -110,8 +110,8 @@ export function Footer() {
                                         <a href="../about">About Us</a>
                                     </li>*/}
                                     <li>
-                                        <a href="../../../information">
-                                            Information
+                                        <a href="../../../about">
+                                            About
                                         </a>
                                     </li>
                                     <li>

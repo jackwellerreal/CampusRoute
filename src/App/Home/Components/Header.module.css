@@ -16,3 +16,9 @@
     height: 100%;
     cursor: pointer;
 }
+
+.header-items {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}

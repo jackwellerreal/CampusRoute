@@ -9,23 +9,6 @@ import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css/animate.min.css";
 import ReactMarkdown from "react-markdown";
 
-export function Information() {
-    return (
-        <>
-            <section className={styles["information-top"]}>
-                <div className={styles["information-background-top"]}></div>
-                <Header />
-                <div className={styles["information-top-content"]}>
-                    <h1 className={styles["information-title"]}>Information</h1>
-                    <div></div>
-                </div>
-                <div className={styles["information-background-bottom"]}></div>
-            </section>
-            <Footer />
-        </>
-    );
-}
-
 export function InformationItem(props) {
     const [title, setTitle] = useState("");
     const [author, setAuthor] = useState("");

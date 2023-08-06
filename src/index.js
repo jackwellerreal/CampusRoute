@@ -10,11 +10,12 @@ import {
 import { Home } from "./App/Home/Home";
 import { Plus } from "./App/Infomation/Plus/Plus";
 import { Status } from "./App/Infomation/Status";
+import { About } from "./App/Infomation/About";
 
 import InformationTOS from "./App/Infomation/Legal/TOS.md";
 import InformationPrivacy from "./App/Infomation/Legal/Privacy.md";
 
-import { Information, InformationItem } from "./App/Infomation/Information";
+import { InformationItem } from "./App/Infomation/Information";
 
 import InformationDevlogOne from "./App/Infomation/Devlog/One.md";
 import InformationSocialGuidelines from "./App/Infomation/Social/Guidelines.md";
@@ -48,8 +49,8 @@ const router = createBrowserRouter(
             />
             <Route path="/plus" element={<Plus />} errorElement={<Error />} />
             <Route
-                path="/information"
-                element={<Information />}
+                path="/about"
+                element={<About />}
                 errorElement={<Error />}
             />
             <Route
