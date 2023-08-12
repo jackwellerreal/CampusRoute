@@ -6,18 +6,14 @@ import styles from "../App.module.css";
 
 export function Map() {
     return (
-        <MapContainer
-            className={`${styles["app-box"]} ${styles["map"]}`}
-            center={[-27.172444, 152.941163]}
-            zoom={17}
-            maxZoom={18}
-        >
-            <TileLayer
-                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+        <div className={`${styles["app-box"]} ${styles["under-construction"]}`}>
+            <Icon
+                icon="fa6-solid:hammer"
+                className={styles["under-construction-icon"]}
             />
-
-            <Marker position={[-27.172444, 152.941163]} />
-        </MapContainer>
+            <p className={styles["under-construction-text"]}>
+                Section under construction
+            </p>
+        </div>
     );
 }

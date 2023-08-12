@@ -8,17 +8,16 @@ import {
 } from "react-router-dom";
 
 import { Home } from "./App/Home/Home";
-import { Plus } from "./App/Infomation/Plus/Plus";
+import { Plus } from "./App/Infomation/Items/Plus/Plus";
 import { Status } from "./App/Infomation/Status";
 import { About } from "./App/Infomation/About";
 
-import InformationTOS from "./App/Infomation/Legal/TOS.md";
-import InformationPrivacy from "./App/Infomation/Legal/Privacy.md";
-
 import { InformationItem } from "./App/Infomation/Information";
 
-import InformationDevlogOne from "./App/Infomation/Devlog/One.md";
-import InformationSocialGuidelines from "./App/Infomation/Social/Guidelines.md";
+import InformationTOS from "./App/Infomation/Items/Legal/TOS.md";
+import InformationPrivacy from "./App/Infomation/Items/Legal/Privacy.md";
+
+import InformationDevlogOne from "./App/Infomation/Items/Devlog/One.md";
 
 import { AppRedirect } from "./App/App/Redirect";
 import { AppHome } from "./App/App/Pages/Home";
@@ -61,11 +60,6 @@ const router = createBrowserRouter(
             <Route
                 path="/information/devlog/one"
                 element={<InformationItem file={InformationDevlogOne} />}
-                errorElement={<Error />}
-            />
-            <Route
-                path="/information/social/guidelines"
-                element={<InformationItem file={InformationSocialGuidelines} />}
                 errorElement={<Error />}
             />
             <Route

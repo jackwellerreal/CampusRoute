@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 
 import styles from "./Plus.module.css";
 
-import { Header } from "../../Home/Components/Header";
-import { Footer } from "../../Home/Components/Footer";
+import { Header } from "../../../Home/Components/Header";
+import { Footer } from "../../../Home/Components/Footer";
 
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css/animate.min.css";
