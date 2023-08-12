@@ -10,7 +10,7 @@ import {
 import { Home } from "./App/Home/Home";
 import { Plus } from "./App/Infomation/Items/Plus/Plus";
 import { Status } from "./App/Infomation/Status";
-import { About } from "./App/Infomation/About";
+import { About } from "./App/Infomation/Items/About/About";
 
 import { InformationItem } from "./App/Infomation/Information";
 
