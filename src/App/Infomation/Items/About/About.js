@@ -80,22 +80,21 @@ export function About() {
                                 <div>
                                     <h2>History</h2>
                                     <p>
-                                        Campus Route originated from the
-                                        innovative mind of Jack Weller, driven
-                                        by his personal frustration with the
-                                        absence of suitable applications to
-                                        streamline his study routine. This
-                                        frustration led to the inception of
-                                        Campus Route, initially conceived to
-                                        facilitate schools in managing student
-                                        attendance, essay submissions,
-                                        assignments, and other scholastic
-                                        functions. However, our focus shifted to
-                                        prioritize students' needs, evolving
-                                        Campus Route into a comprehensive
-                                        navigation tool tailored to enhance
-                                        students' organizational and academic
-                                        experience.
+                                        Campus Route originated from our
+                                        founder driven by his personal
+                                        frustration with the absence of suitable
+                                        applications to streamline his study
+                                        routine. This frustration led to the
+                                        inception of Campus Route, initially
+                                        conceived to facilitate schools in
+                                        managing student attendance, essay
+                                        submissions, assignments, and other
+                                        scholastic functions. However, our focus
+                                        shifted to prioritize students' needs,
+                                        evolving Campus Route into a
+                                        comprehensive navigation tool tailored
+                                        to enhance students' organizational and
+                                        academic experience.
                                     </p>
                                 </div>
                                 <img
