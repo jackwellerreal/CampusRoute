@@ -29,12 +29,14 @@ const notyf = new Notyf({
     position: {
         x: "right",
         y: "top",
-    }
+    },
 });
 
 export function Settings() {
     const [user] = useAuthState(auth);
     const userID = user.uid;
+
+    const usersCollection = firestore.collection("users");
 
     const handleLogout = () => {
         auth.signOut()
@@ -48,16 +50,16 @@ export function Settings() {
 
     const handleDeleteAccount = async () => {
         try {
-            const tempData = await firestore.collection("users").doc(userID).data();
-            await firestore.collection("users").doc(userID).delete();
+            const tempData = await usersCollection.doc(userID);
+            await usersCollection.doc(userID).delete();
             try {
-                await auth.currentUser.delete()
+                await auth.currentUser.delete();
             } catch (error) {
                 notyf.error(
                     "To proceed, please sign in again and retry the operation."
                 );
                 console.error(error);
-                await firestore.collection("users").doc(userID).set(tempData);
+                await usersCollection.doc(userID).set(tempData.data());
             }
             console.log("User account deleted successfully");
         } catch (error) {
@@ -67,10 +69,7 @@ export function Settings() {
 
     const handleDataExport = async () => {
         try {
-            const userDataSnapshot = await firestore
-                .collection("users")
-                .doc(user.uid)
-                .get();
+            const userDataSnapshot = await usersCollection.doc(user.uid).get();
             const userData = userDataSnapshot.data();
 
             const userDataBlob = new Blob([JSON.stringify(userData)], {
@@ -96,7 +95,9 @@ export function Settings() {
             <div className={styles["settings-info"]}>
                 <div className={styles["settings-info-containter"]}>
                     <h4>Name:</h4>
-                    <p className={styles["settings-info-data"]}>{user.displayName}</p>
+                    <p className={styles["settings-info-data"]}>
+                        {user.displayName}
+                    </p>
                 </div>
 
                 <div className={styles["settings-info-containter"]}>
