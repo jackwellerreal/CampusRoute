@@ -1,16 +1,5 @@
 @import url(../../Styles.css);
 
-button {
-    display: block;
-    font-weight: 600;
-    font-size: x-large;
-    border-radius: 10px;
-    padding: 0.5em;
-    background-color: #555555;
-    cursor: pointer;
-    border: none;
-}
-
 .app-top {
     width: 100%;
     height: 100vh;
@@ -37,6 +26,17 @@ button {
     box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.75);
+}
+
+.app-top button {
+    display: block;
+    font-weight: 600;
+    font-size: x-large;
+    border-radius: 10px;
+    padding: 0.5em;
+    background-color: #555555;
+    cursor: pointer;
+    border: none;
 }
 
 .menu {

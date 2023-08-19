@@ -7,6 +7,11 @@ import {
     RouterProvider,
 } from "react-router-dom";
 
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+import LanguageDetector from "i18next-browser-languagedetector";
+import HttpApi from "i18next-http-backend";
+
 import { Home } from "./App/Home/Home";
 import { Plus } from "./App/Infomation/Items/Plus/Plus";
 import { Status } from "./App/Infomation/Status";
@@ -32,6 +37,31 @@ import { AppSignin } from "./App/App/Signin";
 import { NotFound } from "./App/Home/404";
 import { Error } from "./App/Home/Error";
 
+i18n.use(initReactI18next)
+    .use(LanguageDetector)
+    .use(HttpApi)
+    .init({
+        supportedLngs: ["en","mi","fr","jp","zu","nl","sv"],
+        fallbackLng: "en",
+        detection: {
+            order: [
+                "cookie",
+                "htmlTag",
+                "localStorage",
+                "querystring",
+                "path",
+                "subdomain",
+            ],
+            caches: ["cookie"],
+        },
+        backend: {
+            loadPath: "/locales/{{lng}}/translation.json"
+        },
+        react: {
+            useSuspense: true
+        }
+    });
+
 const router = createBrowserRouter(
     createRoutesFromElements(
         <>
@@ -47,11 +77,7 @@ const router = createBrowserRouter(
                 errorElement={<Error />}
             />
             <Route path="/plus" element={<Plus />} errorElement={<Error />} />
-            <Route
-                path="/about"
-                element={<About />}
-                errorElement={<Error />}
-            />
+            <Route path="/about" element={<About />} errorElement={<Error />} />
             <Route
                 path="/information/status"
                 element={<Status />}
@@ -122,7 +148,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <React.StrictMode>
         <div className="branding-blue">
-            <RouterProvider router={router} errorElement={<h1>error lol</h1>} />
+            <RouterProvider router={router} />
         </div>
     </React.StrictMode>
 );

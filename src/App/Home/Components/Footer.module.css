@@ -16,8 +16,11 @@
 }
 
 .footer-container a {
-    text-decoration: underline;
     cursor: pointer;
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
 }
 
 .footer-container-content {
@@ -44,6 +47,45 @@
 .footer-item li {
     display: block;
     margin-right: 1rem;
+}
+
+.footer-dropdown-button  {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.footer-dropdown-button svg {
+    fill: #fff;
+    height: 1.5rem;
+    margin-right: 1em;
+}
+
+.footer-dropdown-items  {
+    position: absolute;
+    background-color: #3b3b3b;
+    padding: 0.75em;
+    border-radius: 10px;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.75);
+}
+
+.footer-dropdown-item  {
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.footer-dropdown-item:hover {
+    text-decoration: underline;
 }
 
 .newtab {

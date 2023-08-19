@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 import styles from "./Header.module.css";
 
@@ -8,6 +9,7 @@ import logoBig from "../../../Assets/logoBig.svg";
 import { useNavigate } from "react-router-dom";
 
 export function Header() {
+    const { t } = useTranslation();
     const navigate = useNavigate();
 
     return (
@@ -22,18 +24,20 @@ export function Header() {
                 }}
             />
             <nav className={styles["header-items"]}>
-                <a href="../../../about">About</a>
+                <a href="../../../about">{t("header_menu_about")}</a>
                 <a
                     href="https://stats.uptimerobot.com/2rX63cVqwO"
                     target="_blank"
                     rel="noreferrer"
                 >
-                    Status
+                    {t("header_menu_status")}
                 </a>
-                <a href="mailto:contact@campusroute.net">Contact</a>
+                <a href="mailto:contact@campusroute.net">
+                    {t("header_menu_contact")}
+                </a>
             </nav>
             <nav>
-                <a href="">Coming Soon!</a>
+                <a href="">{t("header_menu_signin")}</a>
             </nav>
         </header>
     );

@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 import styles from "./Footer.module.css";
 
@@ -6,9 +7,54 @@ import logo from "../../../Assets/logo.svg";
 import logoBig from "../../../Assets/logoBig.svg";
 
 import { useNavigate } from "react-router-dom";
+import i18next from "i18next";
+
+const languages = [
+    {
+        code: "en",
+        language: "English",
+        country_code: "gb",
+    },
+    {
+        code: "fr",
+        language: "Français",
+        country_code: "fr",
+    },
+    {
+        code: "mi",
+        language: "Māori",
+        country_code: "nz",
+    },
+    {
+        code: "nl",
+        language: "Dutch",
+        country_code: "nl",
+    },
+    {
+        code: "sv",
+        language: "Svenska",
+        country_code: "se",
+    },
+    {
+        code: "zu",
+        language: "Zulu",
+        country_code: "za",
+    },
+    {
+        code: "jp",
+        language: "日本語",
+        country_code: "jp",
+    },
+];
 
 export function Footer() {
+    const { t } = useTranslation();
     const navigate = useNavigate();
+    const [open, setOpen] = React.useState(false);
+
+    const handleOpen = () => {
+        setOpen(!open);
+    };
 
     return (
         <>
@@ -83,13 +129,17 @@ export function Footer() {
                         </div>
                         <div className={styles["footer-item-container"]}>
                             <div className={styles["footer-item"]}>
-                                <h1>Product</h1>
+                                <h1>{t("footer_column_products_title")}</h1>
                                 <ul>
                                     <li>
-                                        <a href="../../../app">App</a>
+                                        <a href="../../../app">
+                                            {t("footer_column_products_app")}
+                                        </a>
                                     </li>
                                     <li>
-                                        <a href="../../../plus">Plus</a>
+                                        <a href="../../../plus">
+                                            {t("footer_column_products_plus")}
+                                        </a>
                                     </li>
                                     <li>
                                         <a
@@ -97,80 +147,107 @@ export function Footer() {
                                             target="_blank"
                                             rel="noreferrer"
                                         >
-                                            Status
+                                            {t("footer_column_products_status")}
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                             <div className={styles["footer-item"]}>
-                                <h1>Company</h1>
+                                <h1>{t("footer_column_company_title")}</h1>
                                 <ul>
-                                    {/*
-                                    <li>
-                                        <a href="../about">About Us</a>
-                                    </li>*/}
                                     <li>
                                         <a href="../../../about">
-                                            About
+                                            {t("footer_column_company_about")}
                                         </a>
                                     </li>
                                     <li>
                                         <a
                                             href="https://drive.proton.me/urls/PW17KC2XNR#J3hFBaJJQWpi"
-                                            target="_blank"                                            
+                                            target="_blank"
                                             rel="noreferrer"
                                         >
-                                            Media Kit
+                                            {t("footer_column_company_media")}
                                         </a>
                                     </li>
                                     <li>
                                         <a href="mailto:contact@campusroute.net">
-                                            Contact
+                                            {t("footer_column_company_contact")}
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                             <div className={styles["footer-item"]}>
-                                <h1>Made by:</h1>
-                                <ul>
-                                    <li>
-                                        <a
-                                            href="https://github.com/what-question-mark"
-                                            target="_blank"
-                                            rel="noreferrer"
+                                <div className={styles["footer-dropdown"]}>
+                                    <button
+                                        className={
+                                            styles["footer-dropdown-button"]
+                                        }
+                                        onClick={handleOpen}
+                                    >
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 512 512"
                                         >
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                className={`${styles["footer-item-icon"]} ${styles["newtab"]}`}
-                                                viewBox="0 0 512 512"
-                                            >
-                                                {/*Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc.*/}
-                                                <path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z" />
-                                            </svg>
-                                            whatqm
-                                        </a>
-                                    </li>
-                                </ul>
+                                            <path d="M57.7 193l9.4 16.4c8.3 14.5 21.9 25.2 38 29.8L163 255.7c17.2 4.9 29 20.6 29 38.5v39.9c0 11 6.2 21 16 25.9s16 14.9 16 25.9v39c0 15.6 14.9 26.9 29.9 22.6c16.1-4.6 28.6-17.5 32.7-33.8l2.8-11.2c4.2-16.9 15.2-31.4 30.3-40l8.1-4.6c15-8.5 24.2-24.5 24.2-41.7v-8.3c0-12.7-5.1-24.9-14.1-33.9l-3.9-3.9c-9-9-21.2-14.1-33.9-14.1H257c-11.1 0-22.1-2.9-31.8-8.4l-34.5-19.7c-4.3-2.5-7.6-6.5-9.2-11.2c-3.2-9.6 1.1-20 10.2-24.5l5.9-3c6.6-3.3 14.3-3.9 21.3-1.5l23.2 7.7c8.2 2.7 17.2-.4 21.9-7.5c4.7-7 4.2-16.3-1.2-22.8l-13.6-16.3c-10-12-9.9-29.5 .3-41.3l15.7-18.3c8.8-10.3 10.2-25 3.5-36.7l-2.4-4.2c-3.5-.2-6.9-.3-10.4-.3C163.1 48 84.4 108.9 57.7 193zM464 256c0-36.8-9.6-71.4-26.4-101.5L412 164.8c-15.7 6.3-23.8 23.8-18.5 39.8l16.9 50.7c3.5 10.4 12 18.3 22.6 20.9l29.1 7.3c1.2-9 1.8-18.2 1.8-27.5zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z" />
+                                        </svg>
+                                        <h1>Language</h1>
+                                    </button>
+
+                                    {open ? (
+                                        <ul
+                                            className={
+                                                styles["footer-dropdown-items"]
+                                            }
+                                            name="Languages"
+                                            id="selected-language"
+                                        >
+                                            {languages.map(
+                                                ({
+                                                    code,
+                                                    language,
+                                                    country_code,
+                                                }) => (
+                                                    <li key={country_code}>
+                                                        <button
+                                                            className={
+                                                                styles[
+                                                                    "footer-dropdown-item"
+                                                                ]
+                                                            }
+                                                            onClick={() => {
+                                                                i18next.changeLanguage(
+                                                                    code
+                                                                );
+                                                                setOpen(false);
+                                                            }}
+                                                        >
+                                                            {language}
+                                                        </button>
+                                                    </li>
+                                                )
+                                            )}
+                                        </ul>
+                                    ) : null}
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div className={styles["footer-acknowledgement"]}>
                         <p className={styles["footer-acknowledgement-content"]}>
-                            We acknowledge the Traditional Owners of the land
-                            where we work and live. We pay our respects to
-                            Elders past, present and emerging. We celebrate the
-                            stories, culture and traditions of Aboriginal and
-                            Torres Strait Islander Elders of all communities who
-                            also work and live on this land.
+                            {t("footer_bottom_acknowledgement")}
                         </p>
                     </div>
                     <div className={styles["footer-legal"]}>
                         <ul className={styles["footer-legal-content"]}>
                             <li>
-                                <a href="../../../tos">Terms of Service</a>
+                                <a href="../../../tos">
+                                    {t("footer_bottom_tos")}
+                                </a>
                             </li>
                             <li>
-                                <a href="../../../privacy">Privacy Policy</a>
+                                <a href="../../../privacy">
+                                    {t("footer_bottom_privacy")}
+                                </a>
                             </li>
                             <li>
                                 <a
@@ -178,7 +255,7 @@ export function Footer() {
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    © 2023 whatqm . All rights reserved.
+                                    {t("footer_bottom_copyright")}
                                 </a>
                             </li>
                         </ul>
