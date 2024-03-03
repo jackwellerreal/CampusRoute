@@ -61,7 +61,7 @@ export function Plus() {
                                             "linear-gradient(0deg,var(--red-50),var(--yellow-50))",
                                     }}
                                 >
-                                    2.99
+                                    0.99
                                 </span>{" "}
                                 / month
                             </h4>
@@ -106,7 +106,7 @@ export function Plus() {
                                             "linear-gradient(0deg,var(--green-50),var(--blue-50))",
                                     }}
                                 >
-                                    34.99
+                                    9.99
                                 </span>{" "}
                                 / year
                             </h4>
