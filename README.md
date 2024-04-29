@@ -1,5 +1,5 @@
 <a href="https://campusroute.net/">
-<img alt="Campus Route Logo" src="https://campusroute.net/assets/Logo/PNG/CampusRoute-logo-highresolution.png" width="50%">
+<img alt="Campus Route Logo" src="./public/assets/Logo/PNG/CampusRoute-logo-highresolution.png" width="50%">
 </a>
 
 <br><br>
