@@ -1,3 +1,7 @@
+> [!IMPORTANT]  
+> This project has been discontinued. <br>
+> Most of the promised features haven't been implemented, sorry for any inconvenience.
+
 <a href="https://campusroute.net/">
 <img alt="Campus Route Logo" src="./public/assets/Logo/PNG/CampusRoute-logo-highresolution.png" width="50%">
 </a>
